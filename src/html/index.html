@@ -17,9 +17,15 @@
 
 <body>
   <header>
-    <img src="./assets/images/logo-awesome-profile-cards.svg" alt="" />
+    <include src="./partials/header.html"></include>
+
+    <!-- habría que pasar esta img al partial header-->
+    <img src="./assets/images/logo-awesome-profile-cards.svg" alt="Logo de Awesome Profile Cards" />
   </header>
   <main>
+    <include src="./partials/landingmain.html"></include>
+
+    <!-- habría que pasar esta parte al partial landingmain-->
     <h1>crea tu tarjeta de visita</h1>
     <p>crea mejores contactos profesionales de forma fácil y cómoda</p>
     <i class="fa-sharp fa-regular fa-object-ungroup"></i>
@@ -30,8 +36,7 @@
     </button>
   </main>
   <footer>
-    <small>Awesome profile-cards @2023</small>
-    <img src="./assets/images/logo-adalab.png" alt="Logo Adalab" />
+    <include src="./partials/footer.html"></include>
   </footer>
 </body>
 

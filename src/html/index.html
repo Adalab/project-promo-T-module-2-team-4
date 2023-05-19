@@ -1,15 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
-  </head>
 
-  <body>
-    Rellename!
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Awesome Profile Cards</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&family=Montserrat:wght@600&family=Open+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/1aa62fa5ff.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="icon" href="./assets/images/favicon.png" />
+</head>
+
+<body>
+  <header>
+    <include src="./partials/header.html"></include>
+
+    <!-- habría que pasar esta img al partial header-->
+    <img src="./assets/images/logo-awesome-profile-cards.svg" alt="Logo de Awesome Profile Cards" />
+  </header>
+  <main>
+    <include src="./partials/landingmain.html"></include>
+
+    <!-- habría que pasar esta parte al partial landingmain-->
+    <h1>crea tu tarjeta de visita</h1>
+    <p>crea mejores contactos profesionales de forma fácil y cómoda</p>
+    <i class="fa-sharp fa-regular fa-object-ungroup"></i>
+    <i class="fa-regular fa-keyboard"></i>
+    <i class="fa-solid fa-share-nodes"></i>
+    <button>
+      <a target="_blank" href="./profile.html">comenzar</a>
+    </button>
+  </main>
+  <footer>
+    <include src="./partials/footer.html"></include>
+  </footer>
+</body>
+
 </html>

@@ -1,9 +1,43 @@
-/*.fieldset {
-    display: flex;
-}*/
-.form__header {
-    display: flex;
+/*Deberíamos trasladar la columna central a toda la página*/
+.central-column {
+    padding: 0 20px 0 20px;
 }
-.fieldset {
-    background-color: aquamarine;
+.headerfill {
+    display: flex;
+    padding: 10px 0 7px;
+    gap: 10px;
+    justify-content: left;
+    .fa-keyboard {
+        font-size: 1.8rem;
+        color: $dull-orange;
+    }
+    &__title {
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: $gunmetal;
+
+    }
+    .fa-angle-down {
+        margin-left: auto;
+        font-size: 1.8rem;
+        color: $gunmetal;
+    }
+}
+.contentfill {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0 30px;
+    /*gap: 20px;*/
+    &__label {
+        font-size: 1.4rem;
+        line-height: 20px;
+        color: $dark-green-blue;
+        margin-bottom: 7px;
+    }
+    &__input {
+        margin-bottom: 20px;
+        border: solid 1px $hospital-green;
+        height: 30px;
+    }
 }

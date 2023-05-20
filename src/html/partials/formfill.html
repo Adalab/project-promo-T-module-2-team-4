@@ -1,39 +1,82 @@
 <!--FORM-FILL: Permitir al usuario que, mediante la introducción de información en un formulario, este texto se muestre maquetado automáticamente en un cuadro similar a una tarjeta de visita, que será la muestra del resultado final-->
 <!--la tag i lleva un style color o eso va en scss?-->
 
-<fieldset class="fieldset">
-  <div class="form__header">
+<fieldset class="central-column">
+  <div class="headerfill">
     <i class="fa-regular fa-keyboard"></i>
-    <h3 class="form__header--title">rellena</h3>
+    <h3 class="headerfill__title">rellena</h3>
     <!--con un scss self tal, voy a poder hacer que este ultimo item actúe diferente a los dos anteriores y se ponga flex-end-->
     <i class="fa-solid fa-angle-down"></i>
   </div>
-  <div class="form__contentfill">
-    <label for="full_name">Nombre completo</label>
-    <input placeholder="Ej: Lucía Sánchez" id="full_name" type="text" name="full_name" />
-    <label for="job">Profesión</label>
-    <input placeholder="Ej: Desarrolladora front-end" id="job" type="text" name="job" />
+  <div class="contentfill">
+    <label class="contentfill__label" for="full_name">Nombre completo</label>
+    <input
+      class="contentfill__input"
+      placeholder="Ej: Lucía Sánchez"
+      id="full_name"
+      type="text"
+      name="full_name"
+    />
+    <label class="contentfill__label" for="job">Profesión</label>
+    <input
+      class="contentfill__input"
+      placeholder="Ej: Desarrolladora front-end"
+      id="job"
+      type="text"
+      name="job"
+    />
     <!--el input type file quedará escondido porque no se puede personalizar, con JS redireccionaremos
         a este botón cuando se haga click en el input type button "Añadir imagen" que será el visible-->
-    <label for="hidden__addfile">Imagen de perfil</label>
+    <label class="contentfill__label" for="hidden__addfile">Imagen de perfil</label>
     <div class="add__image">
-      <input hidden id="hidden__addfile" type="file" name="hidden__addfile" value="Añadir imagen" />
-      <input type="button" name="visible__forAddFile" value="Añadir imagen" />
+      <input
+        class="contentfill__input"
+        hidden
+        id="hidden__addfile"
+        type="file"
+        name="hidden__addfile"
+        value="Añadir imagen"
+      />
+      <input
+        class="contentfill__input"
+        type="button"
+        name="visible__forAddFile"
+        value="Añadir imagen"
+      />
       <!--No estoy segura de este checkbox, pero creo que podemos intentar que se ponga en check solo con JS cuando la imagen se haya subido correctamente? Quizás es para otra cosa y no lo entendí-->
-      <input type="checkbox" />
+      <input class="contentfill__input" type="checkbox" />
     </div>
-    <label for="email">Correo electrónico</label>
-    <input placeholder="Ej: lucia-sanchez@gmail.com" id="email" type="email" name="email" />
-    <label for="phone">Teléfono</label>
-    <input placeholder="Ej: 555 55 55 55" id="phone" type="tel" name="phone" />
-    <label for="linkedin">Linkedin</label>
+    <label class="contentfill__label" for="email">Correo electrónico</label>
     <input
+      class="contentfill__input"
+      placeholder="Ej: lucia-sanchez@gmail.com"
+      id="email"
+      type="email"
+      name="email"
+    />
+    <label class="contentfill__label" for="phone">Teléfono</label>
+    <input
+      class="contentfill__input"
+      placeholder="Ej: 555 55 55 55"
+      id="phone"
+      type="tel"
+      name="phone"
+    />
+    <label class="contentfill__label" for="linkedin">Linkedin</label>
+    <input
+      class="contentfill__input"
       placeholder="Ej: linkedin.com/in/lucia.sanchez"
       id="linkedin"
       type="url"
       name="linkedin"
     />
-    <label for="github">Github</label>
-    <input placeholder="Ej: @lucia-sanchez" id="github" type="text" name="github" />
+    <label class="contentfill__label" for="github">Github</label>
+    <input
+      class="contentfill__input"
+      placeholder="Ej: @lucia-sanchez"
+      id="github"
+      type="text"
+      name="github"
+    />
   </div>
 </fieldset>

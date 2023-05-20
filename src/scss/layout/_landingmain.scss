@@ -1,7 +1,9 @@
 .landing {
   background-color: #f5f5f5;
-  margin: 36px 35px 30px;
+  text-align: center;
 
+  &__article {
+  }
   &__h1 {
     font-family: "Merriweather", serif;
     color: #e17334;
@@ -15,15 +17,21 @@
     font-size: 12.8px;
     text-align: center;
     line-height: 1.28;
+    padding-bottom: 18px;
   }
   &__icons {
     display: flex;
+    align-items: center;
     justify-content: space-around;
     text-align: center;
     font-family: "Open Sans", sans-serif;
     color: #54585a;
-    margin: 18px 0 38.6px;
+    margin: 18px 26px 38.6px;
+    border: solid 1.6px rgba(225, 115, 52, 0.2);
+    padding: 10px;
+
     &--icon {
+      //margin-top: ;
       font-size: 22.4px;
       color: #e17334;
       display: block;
@@ -34,7 +42,6 @@
     background-color: #438792;
     color: #fff;
     font-family: "Open Sans", sans-serif;
-    text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;

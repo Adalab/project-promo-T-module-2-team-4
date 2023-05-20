@@ -1,0 +1,27 @@
+.footer {
+  text-align: center;
+  border: solid 1px #d8d8d8;
+  padding: 20px 0;
+
+  &__copy {
+    font-family: "Open Sans", sans-serif;
+    color: #6b6b6b;
+    display: block;
+    opacity: 0.5;
+    font-size: 14px;
+    line-height: 1.43;
+  }
+  &__logo {
+    &--img {
+      height: 40px;
+      margin-top: 12px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px 40px;
+  }
+}

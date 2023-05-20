@@ -1,0 +1,100 @@
+// Aquí ya no pongo está clase porque está en la parte de Kathi
+// .central-column {
+//     padding: 0 20px;
+// }
+
+
+.headerdesign {
+    display: flex;
+    padding: 10px 0 7px;
+    gap: 10px;
+    justify-content: left;
+
+    .fa-regular {
+        font-size: 1.8rem;
+        color: $dull-orange;
+    }
+
+    &__title {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: $gunmetal;
+
+    }
+
+    .fa-angle-down {
+        margin-left: auto;
+        font-size: 1.8rem;
+        color: $gunmetal;
+    }
+}
+
+.contentdesign {
+    display: flex;
+    flex-direction: row;
+    padding: 15px 0 30px;
+
+    &__options {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+.design1__palette {
+    & .box1 {
+        width: 30px;
+        height: 25px;
+        background-color: $dark-green-blue;
+    }
+    & .box2 {
+        width: 30px;
+        height: 25px;
+        background-color: $dirty-blue;
+    }
+    & .box3 {
+        width: 30px;
+        height: 25px;
+        background-color: $hospital-green;
+    }
+}
+
+.design2__palette {
+    & .box1 {
+        width: 30px;
+        height: 25px;
+        background-color: $dried-blood;
+    }
+
+    & .box2 {
+        width: 30px;
+        height: 25px;
+        background-color: $rusty-red;
+    }
+
+    & .box3 {
+        width: 30px;
+        height: 25px;
+        background-color: $tomato;
+    }
+}
+
+.design3__palette {
+    & .box1 {
+        width: 30px;
+        height: 25px;
+        background-color: $slate;
+    }
+
+    & .box2 {
+        width: 30px;
+        height: 25px;
+        background-color: $faded-orange;
+    }
+
+    & .box3 {
+        width: 30px;
+        height: 25px;
+        background-color: $light-grey-blue;
+    }
+}

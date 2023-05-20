@@ -40,4 +40,20 @@
         border: solid 1px $hospital-green;
         height: 30px;
     }
+    & .buttonaddimg {
+        width: 140px;
+        height: 30px;
+        background-color: $dull-orange;
+        color: $white-two;
+    }
+    & .add__image {
+        display: inline-flex;
+        gap: 20px;
+    }
+    &__checkbox {
+        margin: 0 0 20px;
+        height: 30px;
+        width: 30px;
+        border: solid 1px $hospital-green;
+    }
 }

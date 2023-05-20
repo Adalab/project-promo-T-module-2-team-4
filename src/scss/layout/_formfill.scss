@@ -28,7 +28,6 @@
     display: flex;
     flex-direction: column;
     padding: 15px 0 30px;
-    /*gap: 20px;*/
     &__label {
         font-size: 1.4rem;
         line-height: 20px;
@@ -40,11 +39,19 @@
         border: solid 1px $hospital-green;
         height: 30px;
     }
+    ::placeholder {
+        font-size: 1.4rem;
+        color: $pinkish-grey;
+        line-height: 20px;
+    }
     & .buttonaddimg {
         width: 140px;
         height: 30px;
         background-color: $dull-orange;
         color: $white-two;
+        border-radius: 3px;
+        box-shadow: 0 0 4px 0 $black-32;
+        padding: 3px 22px 7px;
     }
     & .add__image {
         display: inline-flex;
@@ -54,6 +61,6 @@
         margin: 0 0 20px;
         height: 30px;
         width: 30px;
-        border: solid 1px $hospital-green;
+        border: solid 5px $hospital-green;
     }
 }

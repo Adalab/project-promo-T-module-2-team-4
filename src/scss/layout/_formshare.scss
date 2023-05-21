@@ -5,4 +5,10 @@
  font-size: 18px;
  height: 50px;
  width: 200px;
+ border-radius: 12px;
+ border: solid $dull-orange;
+}
+.fa-solid fa-share-nodes {
+    color: $dull-orange;
+    font-size: 1.8rem;
 }

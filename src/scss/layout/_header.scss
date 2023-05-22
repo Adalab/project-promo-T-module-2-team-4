@@ -1,13 +1,19 @@
 .header {
-  background-color: #f5f5f5;
+  background-color: $white-four;
   text-align: center;
+  @media screen and (min-width: 768px) {
+  height: 111px;
+  background-color: $white-two;
+  display: flex;
+  }
 }
+
+
 .imagen {
   height: 63px;
-  margin: 95px 35px 0;
+  margin: 31px 35px 0;
   padding-bottom: 35.4px;
   @media screen and (min-width: 768px) {
-    height: 105px;
-    margin: 350px 174px 0;
+    height: 50px;
   }
 }

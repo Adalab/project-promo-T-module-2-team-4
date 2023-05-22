@@ -1,0 +1,75 @@
+.landing {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 60px;
+  }
+
+  &__h1 {
+    font-family: "Merriweather", serif;
+    color: #e17334;
+    font-size: 19.2px;
+    font-weight: 900;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      font-size: 24px;
+    }
+  }
+  &__p {
+    color: #114e4e;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12.8px;
+    text-align: center;
+    line-height: 1.28;
+
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      margin: 0 218px;
+    }
+  }
+  &__icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12.8px;
+    color: #54585a;
+    margin: 18px 26px 38.6px;
+    border: solid 1.6px rgba(225, 115, 52, 0.2);
+    border-radius: 4px;
+    padding: 15px;
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      margin: 27px 222px 186px;
+      padding: 15px 20px 22px;
+    }
+
+    &--icon {
+      //margin-top: ;
+      font-size: 22.4px;
+      color: #e17334;
+      display: block;
+      @media screen and (min-width: 768px) {
+        font-size: 28px;
+      }
+    }
+  }
+  &__button {
+    border-radius: 21px;
+    background-color: #438792;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 14px 22px;
+    margin-bottom: 10px;
+    display: inline-block;
+
+    @media screen and (min-width: 768px) {
+    }
+  }
+}

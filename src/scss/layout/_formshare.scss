@@ -1,5 +1,9 @@
 .form__share {
-    border-top: 1px solid $white-three;
+   border-top: 1px solid $white-three;
+}
+.span__share {
+display: flex;
+justify-content: space-around;
 }
 .share__button {
  color: $white-two;
@@ -18,8 +22,10 @@
     color: $dull-orange;
     font-size: 1.8rem;
 }
+.span__border {
+    border-bottom: 1px solid $white-three; //no se esta viendo  
+}
 .text__created {
-    border-top: 1px solid $white-three;
     font-size: 1.8rem;
     margin-top: 15px;   
 }
@@ -42,7 +48,7 @@
 .rrss__button1, .rrss__button2, .rrss__button3 {
     margin-top: 10px;
     height: 30px; 
-    width: 185px;
+    width: 190px;
     font-size: 1.4rem;
     font-family: "Open Sans", sans-serif;
     border-radius: 5px;
@@ -55,6 +61,7 @@
 .rrss__button2 {
     background-color: #00acee;
     border: 1px solid $light-grey-blue;
+    color: $white-two; 
 }
 
 .rrss__button3 {
@@ -64,8 +71,7 @@
         background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
     border: 1px solid $light-grey-blue;
-    border-bottom: 1px solid $white-three;
     margin-bottom: 10px;
-
-     
+    color: $white-two;     
+    border-bottom: 1px solid $white-three; // no se esta viendo
 }

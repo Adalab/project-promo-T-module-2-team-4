@@ -1,13 +1,31 @@
-.header {
-  background-color: #f5f5f5;
-  text-align: center;
+.header__landing {
+  background: $white-four;
+  padding: 95px 35px;
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    padding: 350px 174px;
+  }
 }
+
+.header__landing,
 .imagen {
   height: 63px;
-  margin: 95px 35px 0;
   padding-bottom: 35.4px;
   @media screen and (min-width: 768px) {
-    height: 105px;
-    margin: 350px 174px 0;
+      height: 105px;
+      padding-bottom: 31px;
+  }
+}
+.header__profile {
+  background-color: $white-two;
+  height: 111px;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  
+  & .imagen {
+    padding-bottom: 0;
+    height: 50px;
   }
 }

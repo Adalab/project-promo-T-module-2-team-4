@@ -3,6 +3,14 @@
 //     padding: 0 20px;
 // }
 
+
+@media screen and (min-width: 768px) {
+    .section__form {
+        display: flex;
+        flex-direction: row-reverse;
+        background: linear-gradient(to bottom, $white-four, $white-two);
+    }
+}
 .headerdesign {
     display: flex;
     padding: 10px 0 7px;

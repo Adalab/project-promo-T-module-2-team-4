@@ -1,13 +1,15 @@
 <!--FORM-FILL: Permitir al usuario que, mediante la introducción de información en un formulario, este texto se muestre maquetado automáticamente en un cuadro similar a una tarjeta de visita, que será la muestra del resultado final-->
 
-<fieldset class="central-column">
+<fieldset class="central-column js__fill">
   <div class="headerfill">
     <i class="fa-regular fa-keyboard"></i>
     <h3 class="headerfill__title">rellena</h3>
     <i class="fa-solid fa-angle-down"></i>
   </div>
-  <div class="contentfill">
-    <label class="contentfill__label" for="full_name">Nombre completo</label>
+  <div class="contentfill collapsed js__fill__container">
+    <label class="contentfill__label" for="full_name"
+      >Nombre completo</label
+    >
     <input
       class="contentfill__input"
       placeholder="Ej: Sally Jill"
@@ -15,7 +17,9 @@
       type="text"
       name="full_name"
     />
-    <label class="contentfill__label" for="job">Profesión</label>
+    <label class="contentfill__label" for="job"
+      >Profesión</label
+    >
     <input
       class="contentfill__input"
       placeholder="Ej: Desarrolladora front-end"
@@ -25,7 +29,9 @@
     />
     <!--el input type file quedará escondido porque no se puede personalizar, con JS redireccionaremos
         a este botón cuando se haga click en el input type button "Añadir imagen" que será el visible-->
-    <label class="contentfill__label" for="hidden__addfile">Imagen de perfil</label>
+    <label class="contentfill__label" for="hidden__addfile"
+      >Imagen de perfil</label
+    >
     <div class="add__image">
       <input
         class="contentfill__input"
@@ -42,9 +48,14 @@
         value="Añadir imagen"
       />
       <!--No estoy segura de este checkbox, pero creo que podemos intentar que se ponga en check solo con JS cuando la imagen se haya subido correctamente? Quizás es para otra cosa y no lo entendí-->
-      <input class="contentfill__checkbox" type="checkbox" />
+      <input
+        class="contentfill__checkbox"
+        type="checkbox"
+      />
     </div>
-    <label class="contentfill__label" for="email">Correo electrónico</label>
+    <label class="contentfill__label" for="email"
+      >Correo electrónico</label
+    >
     <input
       class="contentfill__input"
       placeholder="Ej: sally-hill@gmail.com"
@@ -52,7 +63,9 @@
       type="email"
       name="email"
     />
-    <label class="contentfill__label" for="phone">Teléfono</label>
+    <label class="contentfill__label" for="phone"
+      >Teléfono</label
+    >
     <input
       class="contentfill__input"
       placeholder="Ej: 555-55-55-55"
@@ -60,7 +73,9 @@
       type="tel"
       name="phone"
     />
-    <label class="contentfill__label" for="linkedin">Linkedin</label>
+    <label class="contentfill__label" for="linkedin"
+      >Linkedin</label
+    >
     <input
       class="contentfill__input"
       placeholder="Ej: linkedin.com/in/sally.hill"
@@ -68,7 +83,9 @@
       type="url"
       name="linkedin"
     />
-    <label class="contentfill__label" for="github">Github</label>
+    <label class="contentfill__label" for="github"
+      >Github</label
+    >
     <input
       class="contentfill__input"
       placeholder="Ej: @sally-hill"

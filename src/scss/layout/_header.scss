@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   @media screen and (min-width: 768px) {
-    padding: 350px 174px;
+    padding: 200px 174px;
   }
 }
 
@@ -13,8 +13,8 @@
   height: 63px;
   padding-bottom: 35.4px;
   @media screen and (min-width: 768px) {
-      height: 105px;
-      padding-bottom: 31px;
+    height: 105px;
+    padding-bottom: 31px;
   }
 }
 .header__profile {
@@ -23,7 +23,7 @@
   display: flex;
   align-items: center;
   padding-left: 40px;
-  
+
   & .imagen {
     padding-bottom: 0;
     height: 50px;

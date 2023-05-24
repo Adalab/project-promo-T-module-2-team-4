@@ -2,6 +2,7 @@
   text-align: center;
   border-top: solid 1px $white-three;
   padding: 20px 0;
+  height: 110px;
 
   &__copy {
     color: $brownish-grey;
@@ -22,5 +23,6 @@
     flex-wrap: wrap;
     align-items: center;
     padding: 20px 40px;
+    height: 60px;
   }
 }

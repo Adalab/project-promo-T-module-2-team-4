@@ -1,0 +1,76 @@
+.border {
+ border-top: 1px solid $white-three; 
+}
+.span_share {
+display: flex;
+justify-content: space-around;
+}
+.share__button {
+ color: $white-two;
+ background-color: $dull-orange; 
+ text-transform: uppercase;
+ font-size: 1.8rem;
+ height: 50px;
+ width: 200px;
+ border-radius: 12px;
+ border: solid $dull-orange;
+ display: block;
+ margin: 20px auto 30px;
+}
+.fa-share-nodes {
+    color: $dull-orange;
+    font-size: 1.8rem;
+}
+/*.span__border {
+    border-bottom: 1px solid $white-three; //no se esta viendo  
+}*/
+.text__created {
+    font-size: 1.8rem;
+    margin-top: 15px;   
+}
+.text__created::first-letter {
+    text-transform: capitalize;
+
+}
+.imagen_creada {
+    color: $dull-orange;
+    font-size: 1.5rem;
+    margin-top: 5px;
+    font-weight: bold;
+}
+.buttons__rrss {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.rrss__button1, .rrss__button2, .rrss__button3 {
+    margin-top: 10px;
+    height: 30px; 
+    width: 190px;
+    font-size: 1.4rem;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 5px;
+
+}
+.rrss__button1 {
+    background-color: white;
+    border: 1px solid $light-grey-blue;
+}
+.rrss__button2 {
+    background-color: #00acee;
+    border: 1px solid $light-grey-blue;
+    color: $white-two; 
+}
+
+.rrss__button3 {
+    background: #f09433;
+        background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+    border: 1px solid $light-grey-blue;
+    margin-bottom: 10px;
+    color: $white-two;     
+    border-bottom: 1px solid $white-three; // no se esta viendo
+}

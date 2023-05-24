@@ -1,80 +1,35 @@
 <!--FORM-FILL: Permitir al usuario que, mediante la introducción de información en un formulario, este texto se muestre maquetado automáticamente en un cuadro similar a una tarjeta de visita, que será la muestra del resultado final-->
 
-<fieldset class="central-column">
+<fieldset class="central-column js__fill">
   <div class="headerfill">
     <i class="fa-regular fa-keyboard"></i>
     <h3 class="headerfill__title">rellena</h3>
     <i class="fa-solid fa-angle-down"></i>
   </div>
-  <div class="contentfill">
+  <div class="contentfill collapsed js__fill__container">
     <label class="contentfill__label" for="full_name">Nombre completo</label>
-    <input
-      class="contentfill__input"
-      placeholder="Ej: Sally Jill"
-      id="full_name"
-      type="text"
-      name="full_name"
-    />
+    <input class="contentfill__input js_name" placeholder="Ej: Sally Jill" id="full_name" type="text"
+      name="full_name" />
     <label class="contentfill__label" for="job">Profesión</label>
-    <input
-      class="contentfill__input"
-      placeholder="Ej: Desarrolladora front-end"
-      id="job"
-      type="text"
-      name="job"
-    />
+    <input class="contentfill__input" placeholder="Ej: Desarrolladora front-end" id="job" type="text" name="job" />
     <!--el input type file quedará escondido porque no se puede personalizar, con JS redireccionaremos
         a este botón cuando se haga click en el input type button "Añadir imagen" que será el visible-->
     <label class="contentfill__label" for="hidden__addfile">Imagen de perfil</label>
     <div class="add__image">
-      <input
-        class="contentfill__input"
-        hidden
-        id="hidden__addfile"
-        type="file"
-        name="hidden__addfile"
-        value="Añadir imagen"
-      />
-      <input
-        class="contentfill__input buttonaddimg"
-        type="button"
-        name="visible__forAddFile"
-        value="Añadir imagen"
-      />
+      <input class="contentfill__input" hidden id="hidden__addfile" type="file" name="hidden__addfile"
+        value="Añadir imagen" />
+      <input class="contentfill__input buttonaddimg" type="button" name="visible__forAddFile" value="Añadir imagen" />
       <!--No estoy segura de este checkbox, pero creo que podemos intentar que se ponga en check solo con JS cuando la imagen se haya subido correctamente? Quizás es para otra cosa y no lo entendí-->
       <input class="contentfill__checkbox" type="checkbox" />
     </div>
     <label class="contentfill__label" for="email">Correo electrónico</label>
-    <input
-      class="contentfill__input"
-      placeholder="Ej: sally-hill@gmail.com"
-      id="email"
-      type="email"
-      name="email"
-    />
+    <input class="contentfill__input" placeholder="Ej: sally-hill@gmail.com" id="email" type="email" name="email" />
     <label class="contentfill__label" for="phone">Teléfono</label>
-    <input
-      class="contentfill__input"
-      placeholder="Ej: 555-55-55-55"
-      id="phone"
-      type="tel"
-      name="phone"
-    />
+    <input class="contentfill__input" placeholder="Ej: 555-55-55-55" id="phone" type="tel" name="phone" />
     <label class="contentfill__label" for="linkedin">Linkedin</label>
-    <input
-      class="contentfill__input"
-      placeholder="Ej: linkedin.com/in/sally.hill"
-      id="linkedin"
-      type="url"
-      name="linkedin"
-    />
+    <input class="contentfill__input" placeholder="Ej: linkedin.com/in/sally.hill" id="linkedin" type="url"
+      name="linkedin" />
     <label class="contentfill__label" for="github">Github</label>
-    <input
-      class="contentfill__input"
-      placeholder="Ej: @sally-hill"
-      id="github"
-      type="text"
-      name="github"
-    />
+    <input class="contentfill__input" placeholder="Ej: @sally-hill" id="github" type="text" name="github" />
   </div>
 </fieldset>

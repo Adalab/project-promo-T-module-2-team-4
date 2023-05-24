@@ -24,7 +24,7 @@ fillLegend.addEventListener('click', (event) => {
   designContainer.classList.add('collapsed');
   shareContainer.classList.add('collapsed');
   shareContainer2.classList.add('collapsed');
-  shareBorder3.classList.add('collapsed');C
+  shareBorder3.classList.add('collapsed');
   fillContainer.classList.remove('collapsed');
 });
 

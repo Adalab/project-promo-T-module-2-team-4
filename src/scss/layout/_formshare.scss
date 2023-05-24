@@ -21,9 +21,7 @@ justify-content: space-around;
     color: $dull-orange;
     font-size: 1.8rem;
 }
-/*.span__border {
-    border-bottom: 1px solid $white-three; //no se esta viendo  
-}*/
+
 .text__created {
     font-size: 1.8rem;
     margin-top: 15px;   
@@ -51,15 +49,15 @@ justify-content: space-around;
     font-size: 1.4rem;
     font-family: "Open Sans", sans-serif;
     border-radius: 5px;
+    border: 1px solid $light-grey-blue;
 
 }
 .rrss__button1 {
     background-color: white;
-    border: 1px solid $light-grey-blue;
+    
 }
 .rrss__button2 {
     background-color: #00acee;
-    border: 1px solid $light-grey-blue;
     color: $white-two; 
 }
 
@@ -69,8 +67,6 @@ justify-content: space-around;
         background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
         background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
-    border: 1px solid $light-grey-blue;
-    margin-bottom: 10px;
-    color: $white-two;     
-    border-bottom: 1px solid $white-three; // no se esta viendo
+    color: $white-two;
+    margin-bottom: 20px;
 }

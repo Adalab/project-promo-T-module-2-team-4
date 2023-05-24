@@ -35,6 +35,12 @@
     }
 }
 
+.container_namedescription{
+    border-left: 5px solid;
+    border-color: $dirty-blue;
+    
+}
+
 .card {
     background-color: $white-two;
     box-shadow: 0 1px 10px 0 $black-20, 0 1px 3px 0 $black-32;
@@ -59,8 +65,74 @@
         width: 100%;
     }
 
-    &__icons--i {
+    &__nav {
+        display: flex;
+        gap: 10px;
+        padding: 12px 0 12px 20px;
+        
+    }
+    &__icon {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        text-decoration: none;
         color: $dark-green-blue;
         border: solid 2px $hospital-green;
+        border-radius: 50%;
+        padding: 7px;
+        height: 16px;
+        width: 16px;
+        
+    }
+}
+
+.palette-1 {
+    .card__name {
+        color: $dark-green-blue;
+    }
+    .container_namedescription {
+        border-color: $dirty-blue;
+    }
+    .card__icon {
+        color: $dark-green-blue;
+        border-color: $hospital-green;
+    }
+} 
+.palette-2 {
+    .card__name {
+        color: $dried-blood;
+    }
+    .container_namedescription {
+        border-color: $rusty-red;
+    }
+    .card__icon {
+        color: $dried-blood;
+        border-color: $tomato;
+    }
+}
+
+.palette-3 {
+    .card__name {
+        color: $slate;
+    }
+    .container_namedescription {
+        border-color: $faded-orange;
+    }
+    .card__icon {
+        color: $slate;
+        border-color: $light-grey-blue;
+    }
+}
+
+.palette-4 {
+    .card__name {
+        color: $honolulu-blue;
+    }
+    .container_namedescription {
+        border-color: $pacific-cyan;
+    }
+    .card__icon {
+        color: $honolulu-blue;
+        border-color: $non-photo-blue;
     }
 }

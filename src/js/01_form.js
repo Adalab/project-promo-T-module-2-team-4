@@ -36,4 +36,21 @@ shareLegend.addEventListener('click', (event) =>{
 
 });
 
+// CLASE DE DAYANA
 
+/* 1º llamar al input */
+
+const inputName = document.querySelector('.js_name');
+// js_name está en el partial de formfill.html
+
+const previewName = document.querySelector('.js__preview_name');
+// js_preview_name clase de Dayana para el Nombre y Apellidos del preview
+
+function handlerInputName(event) {
+  const inputValue = event.target.value;
+  previewName.innerHTML = inputValue;
+}
+
+inputName.addEventListener('input', handlerInputName);
+
+//Sería así con todos los demás, profesión, links SM, etc.

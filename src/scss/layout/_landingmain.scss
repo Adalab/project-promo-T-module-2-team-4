@@ -9,21 +9,21 @@
   &__h1 {
     font-family: $font-main-title;
     color: $dull-orange;
-    font-size: 19.2px;
+    font-size: 1.9rem;
     font-weight: 900;
     text-align: center;
     @media screen and (min-width: 768px) {
-      font-size: 24px;
+      font-size: 2.2rem;
     }
   }
   &__p {
     color: $dark-green-blue;
-    font-size: 12.8px;
+    font-size: 1.28rem;
     text-align: center;
     line-height: 1.28;
 
     @media screen and (min-width: 768px) {
-      font-size: 16px;
+      font-size: 1.6rem;
       margin: 0 218px;
     }
   }
@@ -32,25 +32,25 @@
     align-items: center;
     justify-content: space-around;
     text-align: center;
-    font-size: 12.8px;
+    font-size: 1.28rem;
     color: $gunmetal;
     margin: 18px 26px 38.6px;
     border: solid 1.6px rgba(225, 115, 52, 0.2);
     border-radius: 4px;
     padding: 15px;
     @media screen and (min-width: 768px) {
-      font-size: 16px;
+      font-size: 1.6rem;
       margin: 27px 222px 186px;
       padding: 15px 20px 22px;
     }
 
     &--icon {
       //margin-top: ;
-      font-size: 22.4px;
+      font-size: 2.24rem;
       color: $dull-orange;
       display: block;
       @media screen and (min-width: 768px) {
-        font-size: 28px;
+        font-size: 2.8rem;
       }
     }
   }
@@ -60,7 +60,7 @@
     color: $white-two;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 600;
     padding: 14px 22px;
     margin-bottom: 10px;

@@ -1,7 +1,7 @@
-.form__share {
-   border-top: 1px solid $white-three;
+.border {
+ border-top: 1px solid $white-three; 
 }
-.span__share {
+.span_share {
 display: flex;
 justify-content: space-around;
 }
@@ -15,16 +15,15 @@ justify-content: space-around;
  border-radius: 12px;
  border: solid $dull-orange;
  display: block;
- margin: 0 auto;
- margin-top: 20px;
+ margin: 20px auto 30px;
 }
 .fa-share-nodes {
     color: $dull-orange;
     font-size: 1.8rem;
 }
-.span__border {
+/*.span__border {
     border-bottom: 1px solid $white-three; //no se esta viendo  
-}
+}*/
 .text__created {
     font-size: 1.8rem;
     margin-top: 15px;   

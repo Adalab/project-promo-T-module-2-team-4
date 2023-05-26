@@ -3,7 +3,7 @@
 
 
 In the second module of the course we have to make a web page to create digital cards.
-Our website includes a landing page and a design page, following the design and indications provided by the Product Owner.
+Our website includes a landing page and a design page to create customized profile cards, following the design and indications provided by the Product Owner.
 
 
 ## Team members: 👩🏻‍💻👩🏻‍💻👩🏼‍💻👩🏻‍💻👩🏻‍💻👩🏻‍💻

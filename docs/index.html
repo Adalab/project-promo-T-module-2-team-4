@@ -6,16 +6,56 @@
       name="viewport"
       content="width=device-width, initial-scale=1"
     />
-    <title>Awesome Cards</title>
+    <title>Awesome Profile Cards</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&family=Montserrat:wght@600&family=Open+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <script
-      src="https://kit.fontawesome.com/5168f8ef34.js"
+      src="https://kit.fontawesome.com/1aa62fa5ff.js"
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
+    <link rel="icon" href="./assets/images/favicon_2.png" />
   </head>
 
   <body>
-    <script src="./assets/js/main.js"></script>
+    <header class="header__landing">
+      <img
+        class="imagen"
+        src="./assets/images/logo-awesome-profile-cards.svg"
+        alt="Logo de Awesome Profile Cards"
+      />
+    </header>
+
+    <main class="landing">
+      <article class="landing__article">
+        <h1 class="landing__article--h1">Crea tu tarjeta de visita</h1>
+        <p class="landing__article--p">Crea mejores contactos profesionales de forma fácil y cómoda</p>
+        <ul class="landing__article--icons">
+          <li><i class="icon fa-sharp fa-regular fa-object-ungroup"></i>Diseña</li>
+          <li><i class="icon fa-regular fa-keyboard"></i>Rellena</li>
+          <li><i class="icon fa-solid fa-share-nodes"></i>Comparte</li>
+        </ul>
+        <a class="landing__article--button" href="./profile.html" title="Profile" target="_blank">Comenzar</a>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <small class="footer__copy">Awesone profile-cards &copy; 2023</small>
+      <a class="footer__logo" href="https://adalab.es/" target="_blank" title="Adalab">
+        <img class="footer__logo--img" src="./assets/images/logo-adalab.png" alt="Logo Adalab" />
+      </a>
+    </footer>
+
   </body>
 </html>

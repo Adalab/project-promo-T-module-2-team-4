@@ -26,7 +26,7 @@
       font-size: 1.28rem;
       text-align: center;
       line-height: 1.28;
-  
+
       @media screen and (min-width: 768px) {
         font-size: 1.6rem;
         margin: 0 218px;
@@ -50,9 +50,8 @@
         margin: 27px 222px 186px;
         padding: 15px 20px 22px;
       }
-  
+
       & .icon {
-        //margin-top: ;
         font-size: 2.24rem;
         color: $dull-orange;
         display: block;
@@ -72,10 +71,9 @@
       padding: 14px 22px;
       margin-bottom: 10px;
       display: inline-block;
-  
+
       @media screen and (min-width: 768px) {
       }
     }
   }
-  
 }

@@ -1,66 +1,64 @@
-/*Deberíamos trasladar la columna central a toda la página*/
 .central-column {
-    padding: 0 20px;
+  padding: 0 20px;
 }
 .headerfill {
-    display: flex;
-    padding: 10px 0 7px;
-    gap: 10px;
-    justify-content: left;
-    .fa-keyboard {
-        font-size: 1.8rem;
-        color: $dull-orange;
-    }
-    &__title {
-        font-size: 1.8rem;
-        text-transform: uppercase;
-        font-weight: 600;
-        color: $gunmetal;
-
-    }
-    .fa-angle-down {
-        margin-left: auto;
-        font-size: 1.8rem;
-        color: $gunmetal;
-    }
+  display: flex;
+  padding: 10px 0 7px;
+  gap: 10px;
+  justify-content: left;
+  .fa-keyboard {
+    font-size: 1.8rem;
+    color: $dull-orange;
+  }
+  &__title {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $gunmetal;
+  }
+  .fa-angle-down {
+    margin-left: auto;
+    font-size: 1.8rem;
+    color: $gunmetal;
+  }
 }
 .contentfill {
-    display: flex;
-    flex-direction: column;
-    padding: 15px 0 30px;
-    &__label {
-        font-size: 1.4rem;
-        line-height: 20px;
-        color: $dark-green-blue;
-        margin-bottom: 7px;
-    }
-    &__input {
-        margin-bottom: 20px;
-        border: solid 1px $hospital-green;
-        height: 30px;
-    }
-    ::placeholder {
-        font-size: 1.4rem;
-        color: $pinkish-grey;
-        line-height: 20px;
-    }
-    & .buttonaddimg {
-        width: 140px;
-        height: 30px;
-        background-color: $dull-orange;
-        color: $white-two;
-        border-radius: 3px;
-        box-shadow: 0 0 4px 0 $black-32;
-        padding: 3px 22px 7px;
-    }
-    & .add__image {
-        display: inline-flex;
-        gap: 20px;
-    }
-    &__checkbox {
-        margin: 0 0 20px;
-        height: 30px;
-        width: 30px;
-        border: solid 5px $hospital-green;
-    }
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0 30px;
+  &__label {
+    font-size: 1.4rem;
+    line-height: 20px;
+    color: $dark-green-blue;
+    margin-bottom: 7px;
+  }
+  &__input {
+    margin-bottom: 20px;
+    border: solid 1px $hospital-green;
+    height: 30px;
+  }
+  ::placeholder {
+    font-size: 1.4rem;
+    color: $pinkish-grey;
+    line-height: 20px;
+  }
+  & .buttonaddimg {
+    width: 140px;
+    height: 30px;
+    background-color: $dull-orange;
+    color: $white-two;
+    border-radius: 3px;
+    box-shadow: 0 0 4px 0 $black-32;
+    padding: 3px 22px 7px;
+  }
+  & .add__image {
+    display: inline-flex;
+    gap: 20px;
+  }
+  &__checkbox {
+    margin: 0 0 20px;
+    height: 30px;
+    width: 30px;
+    border: solid 5px $hospital-green;
+  }
 }

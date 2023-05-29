@@ -1,5 +1,6 @@
 'use strict';
 
+const arrowRotate = document.querySelector('.js_arrow');
 const designLegend = document.querySelector('.js__design');
 const designContainer = document.querySelector('.js__design__container');
 

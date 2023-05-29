@@ -1,143 +1,139 @@
-
-@media screen and (min-width: 768px){
-    .main {
-        display: flex;
-        flex-direction: row-reverse;
-        background: linear-gradient(to bottom, $white-four, $white-two);
-        padding: 20px 40px 20px;
-        gap: 30px;
-    }
-    .preview {
-        width: 50vw;
-    }
+@media screen and (min-width: 768px) {
+  .main {
+    display: flex;
+    flex-direction: row-reverse;
+    background: linear-gradient(to bottom, $white-four, $white-two);
+    padding: 20px 40px 20px;
+    gap: 30px;
+  }
+  .preview {
+    width: 50vw;
+  }
 }
 
 .preview {
-    background: linear-gradient(to bottom, $silver, $pale-grey);
-    display: flex;
-    justify-content: center;
-    
+  background: linear-gradient(to bottom, $silver, $pale-grey);
+  display: flex;
+  justify-content: center;
 }
 
 .columnsection1 {
-    padding: 0 40px 45px 40px;
+  padding: 0 40px 45px 40px;
 }
 .preview__button {
-    width: 100px;
-    height: 30px;
-    background-color: $silver;
-    text-transform: uppercase;
-    color: $gunmetal;
-    border: solid 2px $white-two;
-    border-radius: 20px;
-    font-size: 1.3rem;
-    margin: 50px 0 25px;
+  width: 100px;
+  height: 30px;
+  background-color: $silver;
+  text-transform: uppercase;
+  color: $gunmetal;
+  border: solid 2px $white-two;
+  border-radius: 20px;
+  font-size: 1.3rem;
+  margin: 50px 0 25px;
 
-    &-icon {
-        margin-left: 5px;
-    }
+  &-icon {
+    margin-left: 5px;
+  }
 }
 
-.container_namedescription{
-    border-left: 5px solid;
-    border-color: $dirty-blue;
-    
+.container_namedescription {
+  border-left: 5px solid;
+  border-color: $dirty-blue;
 }
 
 .card {
-    width: 240px;
-    //height: 329px;
-    background-color: $white-two;
-    box-shadow: 0 1px 10px 0 $black-20, 0 1px 3px 0 $black-32;
-    &__name {
-        text-transform: capitalize;
-        font-size: 2rem;
-        color: $dark-green-blue;
-        font-family: $font-secondary;
-        font-weight: bold;
-        margin: 0px 25px 15px 25px;
-        padding-top: 20px;
+  width: 240px;
+  //height: 329px;
+  background-color: $white-two;
+  box-shadow: 0 1px 10px 0 $black-20, 0 1px 3px 0 $black-32;
+  &__name {
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: $dark-green-blue;
+    font-family: $font-secondary;
+    font-weight: bold;
+    margin: 0px 25px 15px 25px;
+    padding-top: 20px;
+  }
+  &__description {
+    font-size: 1.6rem;
+    color: $gunmetal;
+    font-family: $font-secondary;
+    padding: 0 25px 15px 25px;
+  }
+  &__img {
+    background-image: url('../images/tica.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 245px;
+  }
 
-    }
-    &__description {
-        font-size: 1.6rem;
-        color: $gunmetal;
-        font-family: $font-secondary;
-        padding: 0 25px 15px 25px;
-
-    }
-    &__img {
-        width: 100%;
-    }
-
-    &__nav {
-        display: flex;
-        gap: 10px;
-        padding: 12px 0 12px 20px;
-        
-    }
-    &__icon {
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        text-decoration: none;
-        color: $dark-green-blue;
-        border: solid 2px $hospital-green;
-        border-radius: 50%;
-        padding: 7px;
-        height: 16px;
-        width: 16px;
-        
-    }
+  &__nav {
+    display: flex;
+    gap: 10px;
+    padding: 12px 0 12px 20px;
+  }
+  &__icon {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    color: $dark-green-blue;
+    border: solid 2px $hospital-green;
+    border-radius: 50%;
+    padding: 7px;
+    height: 16px;
+    width: 16px;
+  }
 }
 
 .palette-1 {
-    .card__name {
-        color: $dark-green-blue;
-    }
-    .container_namedescription {
-        border-color: $dirty-blue;
-    }
-    .card__icon {
-        color: $dark-green-blue;
-        border-color: $hospital-green;
-    }
-} 
+  .card__name {
+    color: $dark-green-blue;
+  }
+  .container_namedescription {
+    border-color: $dirty-blue;
+  }
+  .card__icon {
+    color: $dark-green-blue;
+    border-color: $hospital-green;
+  }
+}
 .palette-2 {
-    .card__name {
-        color: $dried-blood;
-    }
-    .container_namedescription {
-        border-color: $rusty-red;
-    }
-    .card__icon {
-        color: $dried-blood;
-        border-color: $tomato;
-    }
+  .card__name {
+    color: $dried-blood;
+  }
+  .container_namedescription {
+    border-color: $rusty-red;
+  }
+  .card__icon {
+    color: $dried-blood;
+    border-color: $tomato;
+  }
 }
 
 .palette-3 {
-    .card__name {
-        color: $slate;
-    }
-    .container_namedescription {
-        border-color: $faded-orange;
-    }
-    .card__icon {
-        color: $slate;
-        border-color: $light-grey-blue;
-    }
+  .card__name {
+    color: $slate;
+  }
+  .container_namedescription {
+    border-color: $faded-orange;
+  }
+  .card__icon {
+    color: $slate;
+    border-color: $light-grey-blue;
+  }
 }
 
 .palette-4 {
-    .card__name {
-        color: $honolulu-blue;
-    }
-    .container_namedescription {
-        border-color: $pacific-cyan;
-    }
-    .card__icon {
-        color: $honolulu-blue;
-        border-color: $non-photo-blue;
-    }
+  .card__name {
+    color: $honolulu-blue;
+  }
+  .container_namedescription {
+    border-color: $pacific-cyan;
+  }
+  .card__icon {
+    color: $honolulu-blue;
+    border-color: $non-photo-blue;
+  }
 }

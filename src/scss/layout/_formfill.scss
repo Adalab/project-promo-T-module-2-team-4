@@ -66,3 +66,17 @@
     border: solid 5px $hospital-green;
   }
 }
+
+// ESTO ES LO QUE HE AÑADIDO DE LA PREVISUALIZACIÓN MINI
+.profile {
+  display: flex;
+  &__preview {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #ccc;
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+  }
+}

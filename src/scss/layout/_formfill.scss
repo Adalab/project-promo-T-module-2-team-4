@@ -2,25 +2,29 @@
   padding: 0 20px;
 }
 .headerfill {
-  display: flex;
-  padding: 10px 0 7px;
-  gap: 10px;
-  justify-content: left;
-  .fa-keyboard {
-    font-size: 1.8rem;
-    color: $dull-orange;
-  }
-  &__title {
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: $gunmetal;
-  }
-  .fa-angle-down {
-    margin-left: auto;
-    font-size: 1.8rem;
-    color: $gunmetal;
-  }
+    display: flex;
+    padding: 10px 0 7px;
+    gap: 10px;
+    justify-content: left;
+    :hover {
+        cursor: pointer;
+    }
+    .fa-keyboard {
+        font-size: 1.8rem;
+        color: $dull-orange;
+    }
+    &__title {
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: $gunmetal;
+
+    }
+    .fa-angle-down {
+        margin-left: auto;
+        font-size: 1.8rem;
+        color: $gunmetal;
+    }
 }
 .contentfill {
   display: flex;

@@ -21,19 +21,22 @@
   padding: 0 40px 45px 40px;
 }
 .preview__button {
-  width: 100px;
-  height: 30px;
-  background-color: $silver;
-  text-transform: uppercase;
-  color: $gunmetal;
-  border: solid 2px $white-two;
-  border-radius: 20px;
-  font-size: 1.3rem;
-  margin: 50px 0 25px;
+    width: 100px;
+    height: 30px;
+    background-color: $silver;
+    text-transform: uppercase;
+    color: $gunmetal;
+    border: solid 2px $white-two;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    margin: 50px 0 25px;
+    :hover {
+        cursor: pointer;
+    }
+    &-icon {
+        margin-left: 5px;
+    }
 
-  &-icon {
-    margin-left: 5px;
-  }
 }
 
 .container_namedescription {
@@ -87,17 +90,17 @@
 }
 
 .palette-1 {
-  .card__name {
-    color: $dark-green-blue;
-  }
-  .container_namedescription {
-    border-color: $dirty-blue;
-  }
-  .card__icon {
-    color: $dark-green-blue;
-    border-color: $hospital-green;
-  }
-}
+    .card__name {
+        color: $dark-green-blue;
+    }
+    .container_namedescription {
+        border-color: $dirty-blue;
+    }
+    .card__icon {
+        color: $dark-green-blue;
+        border-color: $hospital-green;
+    }
+} 
 .palette-2 {
   .card__name {
     color: $dried-blood;

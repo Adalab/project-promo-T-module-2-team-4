@@ -3,14 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&family=Montserrat:wght@600&family=Open+Sans:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <script src="https://kit.fontawesome.com/1aa62fa5ff.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/1aa62fa5ff.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="icon" href="./assets/images/favicon_2.png" />
     <title>Awesome Profile Cards</title>
@@ -37,37 +50,30 @@
               <h3 class="card__name js__preview_name">nombre apellido</h3>
               <p class="card__description js__description">Front-end developer</p>
             </div>
-            <img class="card__img" src="./assets/images/tica.jpg" alt="" />
+            <img class="card__img js__profile-preview" alt="" />
             <nav class="card__nav">
-              <a class="card__icon js__preview_mail" href=""
-                ><i class="fa-regular fa-envelope"></i
-              ></a>
+              <a class="card__icon js__preview_mail" href=""><i class="fa-regular fa-envelope"></i></a>
               <a class="card__icon js__preview_telephone" href=""
                 ><i class="fa-solid fa-mobile-screen-button"></i
               ></a>
               <a class="card__icon js__preview_linkedin" href=""
                 ><i class="fa-brands fa-linkedin-in"></i
               ></a>
-              <a class="card__icon js__preview_github" href=""
-                ><i class="fa-brands fa-github-alt"></i
-              ></a>
+              <a class="card__icon js__preview_github" href=""><i class="fa-brands fa-github-alt"></i></a>
             </nav>
           </article>
         </article>
       </section>
+
       <section class="section__form">
         <form>
-          <!-- FORM-DESIGN:Permitir al usuario elegir el estilo de la tarjeta, eligiendo paleta de colores 
-
-          Según el enunciado, también pone:
-          Creatividad: Añadir más paletas a las definidas en el diseño, pero no eliminar las que os proponemos ;) 
-          -->
+          
 
           <fieldset class="central-column">
             <div class="headerdesign js__design">
               <i class="fa-sharp fa-regular fa-object-ungroup"></i>
               <h3 class="headerdesign__title">DISEÑA</h3>
-              <i class="fa-solid fa-angle-down"></i>
+              <i class="fa-solid fa-angle-down rotate js_arrow-1"></i>
             </div>
 
             <div class="contentdesign js__design__container">
@@ -109,13 +115,11 @@
             </div>
           </fieldset>
 
-          <!--FORM-FILL: Permitir al usuario que, mediante la introducción de información en un formulario, este texto se muestre maquetado automáticamente en un cuadro similar a una tarjeta de visita, que será la muestra del resultado final-->
-
           <fieldset class="central-column js__fill">
             <div class="headerfill border">
               <i class="fa-regular fa-keyboard"></i>
               <h3 class="headerfill__title">rellena</h3>
-              <i class="fa-solid fa-angle-down"></i>
+              <i class="fa-solid fa-angle-down js_arrow-2"></i>
             </div>
             <div class="contentfill collapsed js__fill__container">
               <label class="contentfill__label" for="full_name">Nombre completo</label>
@@ -134,12 +138,11 @@
                 type="text"
                 name="job"
               />
-              <!--el input type file quedará escondido porque no se puede personalizar, con JS redireccionaremos
-                  a este botón cuando se haga click en el input type button "Añadir imagen" que será el visible-->
+
               <label class="contentfill__label" for="hidden__addfile">Imagen de perfil</label>
               <div class="add__image">
                 <input
-                  class="contentfill__input"
+                  class="contentfill__input js__profile-upload-btn"
                   hidden
                   id="hidden__addfile"
                   type="file"
@@ -147,12 +150,11 @@
                   value="Añadir imagen"
                 />
                 <input
-                  class="contentfill__input buttonaddimg"
+                  class="contentfill__input buttonaddimg js__profile-upload-btn2"
                   type="button"
                   name="visible__forAddFile"
                   value="Añadir imagen"
                 />
-                <!--No estoy segura de este checkbox, pero creo que podemos intentar que se ponga en check solo con JS cuando la imagen se haya subido correctamente? Quizás es para otra cosa y no lo entendí-->
                 <input class="contentfill__checkbox" type="checkbox" />
               </div>
               <label class="contentfill__label" for="email">Correo electrónico</label>
@@ -189,13 +191,14 @@
               />
             </div>
           </fieldset>
-          <!--FORM-FILL: Permitir al usuario compartir en rsss la tarjeta ya creada -->
+
+          
 
           <fieldset class="central-column">
             <div class="headerfill border js__share">
               <i class="fa-solid fa-share-nodes"></i>
               <h3 class="headerfill__title">comparte</h3>
-              <i class="fa-solid fa-angle-down"></i>
+              <i class="fa-solid fa-angle-down js_arrow-3"></i>
             </div>
             <span class="span__share collapsed js__share__container">
               <button class="share__button">
@@ -208,20 +211,33 @@
               <p class="text__created">la tarjeta a sido creada:</p>
               <p class="imagen_creada">http de la tarjeta creada</p>
               <button class="rrss__button1">
-                <span> <i class="fa-brands fa-linkedin" style="color: #0f56d2"></i> </span>Compartir
-                en LinkedIn
+                <span>
+                  <i
+                    class="fa-brands fa-linkedin"
+                    style="color: #0f56d2"
+                  ></i> </span
+                >Compartir en LinkedIn
               </button>
               <button class="rrss__button2">
-                <span> <i class="fa-brands fa-twitter" style="color: #ffffff"></i> </span>Compartir
-                en Twitter
+                <span>
+                  <i
+                    class="fa-brands fa-twitter"
+                    style="color: #ffffff"
+                  ></i> </span
+                >Compartir en Twitter
               </button>
               <button class="rrss__button3">
-                <span> <i class="fa-brands fa-instagram" style="color: #ffffff"></i> </span
+                <span>
+                  <i
+                    class="fa-brands fa-instagram"
+                    style="color: #ffffff"
+                  ></i> </span
                 >Compartir en Instagram
               </button>
             </fieldset>
             <div class="border js__share__border3"></div>
           </fieldset>
+
         </form>
       </section>
     </main>
@@ -232,6 +248,7 @@
           <img class="footer__logo--img" src="./assets/images/logo-adalab.png" alt="Logo Adalab" />
         </a>
       </footer>
+
     </footer>
     <script src="./assets/js/main.js"></script>
   </body>

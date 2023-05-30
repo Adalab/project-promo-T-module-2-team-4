@@ -16,7 +16,7 @@ const fillInput =document.querySelector('.js__fill');
 
 const data = {
   palete: 1,
-  fullName: '',
+  full_name: '',
   job: '',
   photo: '',
   email: '',
@@ -27,7 +27,7 @@ const data = {
 
 
 function renderPreview() {
-  previewName.innerHTML = data.fullName;
+  previewName.innerHTML = data.full_name;
   previewJob.innerHTML = data.job;
   previewMail.href = `mailto:${data.email}`;
   previewTelephone.href = `tel:${data.phone}`;

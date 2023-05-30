@@ -1,5 +1,8 @@
 'use strict';
 
+const arrowRotate1 = document.querySelector('.js_arrow-1');
+const arrowRotate2 = document.querySelector('.js_arrow-2');
+const arrowRotate3 = document.querySelector('.js_arrow-3');
 const designLegend = document.querySelector('.js__design');
 const designContainer = document.querySelector('.js__design__container');
 
@@ -18,8 +21,11 @@ designLegend.addEventListener('click', (event) => {
   shareContainer2.classList.add('collapsed');
   // shareBorder3.classList.add('collapsed');
   designContainer.classList.remove('collapsed');
+  fillContainer.classList.add('collapsed');
+  arrowRotate1.classList.add('rotate');
+  arrowRotate2.classList.remove('rotate');
+  arrowRotate3.classList.remove('rotate');
 });
-//fillContainer.classList.add('collapsed');
 //shareBorder3.classList.add('collapsed');
 
 fillLegend.addEventListener('click', () => {
@@ -28,6 +34,9 @@ fillLegend.addEventListener('click', () => {
   shareContainer2.classList.add('collapsed');
   // shareBorder3.classList.add('collapsed');
   fillContainer.classList.remove('collapsed');
+  arrowRotate1.classList.remove('rotate');
+  arrowRotate2.classList.add('rotate');
+  arrowRotate3.classList.remove('rotate');
 });
 // shareBorder3.classList.add('collapsed');
 
@@ -36,6 +45,9 @@ shareLegend.addEventListener('click', (event) =>{
   designContainer.classList.add('collapsed');
   fillContainer.classList.add('collapsed');
   shareContainer.classList.remove('collapsed');
+  arrowRotate1.classList.remove('rotate');
+  arrowRotate2.classList.remove('rotate');
+  arrowRotate3.classList.add('rotate');
 });
 // shareContainer2.classList.add('collapsed');
 

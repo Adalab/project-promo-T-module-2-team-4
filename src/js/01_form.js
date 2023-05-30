@@ -15,9 +15,11 @@ const shareContainer = document.querySelector('.js__share__container');
 const shareContainer2 = document.querySelector('.js__share__container2');
 //const shareBorder3 = document.querySelector('.js__share__border3');
 
-designLegend.addEventListener('click', () => {
+designLegend.addEventListener('click', (event) => {
+  //fillContainer.classList.add('collapsed');
   shareContainer.classList.add('collapsed');
   shareContainer2.classList.add('collapsed');
+  // shareBorder3.classList.add('collapsed');
   designContainer.classList.remove('collapsed');
   fillContainer.classList.add('collapsed');
   arrowRotate1.classList.add('rotate');
@@ -30,6 +32,7 @@ fillLegend.addEventListener('click', () => {
   designContainer.classList.add('collapsed');
   shareContainer.classList.add('collapsed');
   shareContainer2.classList.add('collapsed');
+  // shareBorder3.classList.add('collapsed');
   fillContainer.classList.remove('collapsed');
   arrowRotate1.classList.remove('rotate');
   arrowRotate2.classList.add('rotate');
@@ -37,7 +40,8 @@ fillLegend.addEventListener('click', () => {
 });
 // shareBorder3.classList.add('collapsed');
 
-shareLegend.addEventListener('click', () =>{
+shareLegend.addEventListener('click', (event) =>{
+  // shareContainer2.classList.add('collapsed');
   designContainer.classList.add('collapsed');
   fillContainer.classList.add('collapsed');
   shareContainer.classList.remove('collapsed');

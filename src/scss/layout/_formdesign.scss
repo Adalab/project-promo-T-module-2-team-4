@@ -8,10 +8,13 @@
   }
 }
 .headerdesign {
-  display: flex;
-  padding: 10px 0 7px;
-  gap: 10px;
-  justify-content: left;
+    display: flex;
+    padding: 10px 0 7px;
+    gap: 10px;
+    justify-content: left;
+    :hover {
+        cursor: pointer;
+    }
 
   .fa-regular {
     font-size: 1.8rem;

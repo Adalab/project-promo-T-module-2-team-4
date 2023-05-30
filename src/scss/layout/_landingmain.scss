@@ -1,7 +1,7 @@
 .landing {
   background-color: $white-four;
   text-align: center;
-  padding-bottom: 40px;
+  padding:0 26px 40px;
   height: 50vh;
   @media screen and (min-width: 768px) {
     padding-bottom: 60px;
@@ -27,14 +27,15 @@
       font-size: 1.28rem;
       text-align: center;
       line-height: 1.28;
+      margin-top: 4px;
 
       @media screen and (min-width: 768px) {
         font-size: 1.6rem;
-        margin: 0 218px;
+        margin: 4px 218px;
       }
     }
     &--icons {
-      width: 268px;
+      width: 238px; // a 268px se le resta el padding de 15 a cada lado, es decir: 238+15+15=268 total caja
       display: flex;
       align-items: center;
       justify-content: space-around;

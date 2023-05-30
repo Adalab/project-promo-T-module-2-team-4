@@ -67,9 +67,9 @@
   }
 }
 
-// ESTO ES LO QUE HE AÑADIDO DE LA PREVISUALIZACIÓN MINI
 .profile {
   display: flex;
+  gap: 20px;
   &__preview {
     background-position: center;
     background-repeat: no-repeat;
@@ -77,6 +77,5 @@
     border: 1px solid #ccc;
     width: 30px;
     height: 30px;
-    margin-left: 20px;
   }
 }

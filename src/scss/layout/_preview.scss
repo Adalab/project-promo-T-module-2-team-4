@@ -32,10 +32,13 @@
     border-radius: 20px;
     font-size: 1.3rem;
     margin: 50px 0 25px;
-
+    :hover {
+        cursor: pointer;
+    }
     &-icon {
         margin-left: 5px;
     }
+
 }
 
 .container_namedescription{
@@ -101,6 +104,11 @@
     .card__icon {
         color: $dark-green-blue;
         border-color: $hospital-green;
+        :hover {
+            cursor: pointer;
+            background-color: $dirty-blue;
+            color: $white-two;
+        }
     }
 } 
 .palette-2 {

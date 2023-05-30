@@ -7,6 +7,9 @@
     padding: 10px 0 7px;
     gap: 10px;
     justify-content: left;
+    :hover {
+        cursor: pointer;
+    }
     .fa-keyboard {
         font-size: 1.8rem;
         color: $dull-orange;

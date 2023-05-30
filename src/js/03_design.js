@@ -11,7 +11,6 @@ const radio4 = document.querySelector('.js_radio-4');
 const previewCard = document.querySelector('.js__preview');
 
 
-// js__preview parte Preview
 
 function handleClickRadio1() {
   previewCard.classList.remove('palette-2','palette-3','palette-4');

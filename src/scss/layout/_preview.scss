@@ -1,5 +1,6 @@
 @media screen and (min-width: 768px) {
   .main {
+    min-height: 75vh;
     display: flex;
     flex-direction: row-reverse;
     background: linear-gradient(to bottom, $white-four, $white-two);

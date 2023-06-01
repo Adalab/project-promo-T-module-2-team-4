@@ -21,4 +21,3 @@ fileField.addEventListener('change', getImage);
 fileField2.addEventListener('click', () => {
   fileField.click();
 });
-

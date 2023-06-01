@@ -51,4 +51,3 @@ shareLegend.addEventListener('click', (event) =>{
 });
 // shareContainer2.classList.add('collapsed');
 
-

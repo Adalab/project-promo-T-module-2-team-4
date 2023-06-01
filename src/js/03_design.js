@@ -37,4 +37,3 @@ radio2.addEventListener('click', handleClickRadio2);
 radio3.addEventListener('click', handleClickRadio3);
 
 radio4.addEventListener('click', handleClickRadio4);
-

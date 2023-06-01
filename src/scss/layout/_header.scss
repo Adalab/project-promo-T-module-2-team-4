@@ -1,25 +1,26 @@
 .header__landing {
   background: $white-four;
-  padding: 95px 35px;
+  height: 40vh;
+  padding: 0 35px 0;
   display: flex;
   justify-content: center;
-  @media screen and (min-width: 768px) {
-    padding: 200px 174px;
-  }
-}
+  align-items: flex-end;
 
-.header__landing,
-.imagen {
+  & .imagen {
   height: 63px;
-  padding-bottom: 35.4px;
+  //padding-bottom: 35.4px;
+    @media screen and (min-width: 768px) {
+      height: 105px;
+    }
+  }
   @media screen and (min-width: 768px) {
-    height: 105px;
-    padding-bottom: 31px;
+    height: 45vh;
+    padding: 0 174px;
   }
 }
 .header__profile {
   background-color: $white-two;
-  height: 111px;
+  height: 10vh;
   display: flex;
   align-items: center;
   padding-left: 40px;

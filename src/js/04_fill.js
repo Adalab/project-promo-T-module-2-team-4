@@ -12,7 +12,7 @@ const previewLinkedIn = document.querySelector('.js__preview_linkedin');
 
 const previewGitHub = document.querySelector('.js__preview_github');
 
-const fillInput =document.querySelector('.js__fill');
+const fillInput = document.querySelector('.js__fill');
 
 const data = {
   palete: 1,
@@ -25,7 +25,6 @@ const data = {
   github: '',
 };
 
-
 function renderPreview() {
   previewName.innerHTML = data.full_name;
   previewJob.innerHTML = data.job;
@@ -35,7 +34,7 @@ function renderPreview() {
   previewGitHub.href = `https://github.com/${data.github.replace('@', '')}`;
 }
 
-function handlerInputs (event) {
+function handlerInputs(event) {
   const idInput = event.target.id;
   const valueInput = event.target.value;
 

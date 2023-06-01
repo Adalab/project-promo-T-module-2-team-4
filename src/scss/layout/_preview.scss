@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @media screen and (min-width: 768px) {
   .main {
     display: flex;
@@ -19,6 +20,14 @@
 
 .columnsection1 {
   padding: 0 40px 45px 40px;
+=======
+.preview {
+    background: linear-gradient(to bottom, $silver, $pale-grey);
+}
+
+.columnsection1 {
+    padding: 0 40px 45px 40px;
+>>>>>>> 72b7cc5582d0d86566a52258699aede3097bc11e
 }
 .preview__button {
     width: 100px;
@@ -30,6 +39,7 @@
     border-radius: 20px;
     font-size: 1.3rem;
     margin: 50px 0 25px;
+<<<<<<< HEAD
     :hover {
         cursor: pointer;
     }
@@ -139,3 +149,40 @@
     border-color: $non-photo-blue;
   }
 }
+=======
+
+    &-icon {
+        margin-left: 5px;
+    }
+}
+
+.card {
+    background-color: $white-two;
+    box-shadow: 0 1px 10px 0 $black-20, 0 1px 3px 0 $black-32;
+    &__name {
+        text-transform: capitalize;
+        font-size: 2rem;
+        color: $dark-green-blue;
+        font-family: $font-secondary;
+        font-weight: bold;
+        margin: 0px 25px 15px 25px;
+        padding-top: 20px;
+
+    }
+    &__description {
+        font-size: 1.6rem;
+        color: $gunmetal;
+        font-family: $font-secondary;
+        padding: 0 25px 15px 25px;
+
+    }
+    &__img {
+        width: 100%;
+    }
+
+    &__icons--i {
+        color: $dark-green-blue;
+        border: solid 2px $hospital-green;
+    }
+}
+>>>>>>> 72b7cc5582d0d86566a52258699aede3097bc11e

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PROJECT MODULE 2: AWESOME PROFILE CARDS
 
 
@@ -37,3 +38,6 @@ This project has been supervised by:
 
 
 © Adalab 2023 | Trótula Promotion
+=======
+# Ejercicio de Adalab
+>>>>>>> 72b7cc5582d0d86566a52258699aede3097bc11e

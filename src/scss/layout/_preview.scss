@@ -22,22 +22,27 @@
   padding: 0 40px 45px 40px;
 }
 .preview__button {
-    width: 100px;
-    height: 30px;
-    background-color: $silver;
-    text-transform: uppercase;
-    color: $gunmetal;
-    border: solid 2px $white-two;
-    border-radius: 20px;
-    font-size: 1.3rem;
-    margin: 50px 0 25px;
-    :hover {
-        cursor: pointer;
-    }
-    &-icon {
-        margin-left: 5px;
-    }
+  width: 100px;
+  height: 30px;
+  background-color: $silver;
+  text-transform: uppercase;
+  color: $gunmetal;
+  border: solid 2px $white-two;
+  border-radius: 20px;
+  font-size: 1.3rem;
+  margin: 50px 0 25px;
 
+  &-icon {
+    margin-left: 5px;
+  }
+}
+.preview__button:hover {
+  cursor: pointer;
+  width: 110px;
+  color: $dirty-blue;
+  background-color: $white-two;
+  box-shadow: 0 4px 20px $dark-green-blue;
+  transition: all 0.2s ease;
 }
 
 .container_namedescription {
@@ -91,17 +96,22 @@
 }
 
 .palette-1 {
-    .card__name {
-        color: $dark-green-blue;
-    }
-    .container_namedescription {
-        border-color: $dirty-blue;
-    }
-    .card__icon {
-        color: $dark-green-blue;
-        border-color: $hospital-green;
-    }
-} 
+  .card__name {
+    color: $dark-green-blue;
+  }
+  .container_namedescription {
+    border-color: $dirty-blue;
+  }
+  .card__icon {
+    color: $dark-green-blue;
+    border-color: $hospital-green;
+  }
+  .card__icon:hover {
+    color: $dirty-blue;
+    background-color: $hospital-green;
+  }
+  
+}
 .palette-2 {
   .card__name {
     color: $dried-blood;
@@ -112,6 +122,10 @@
   .card__icon {
     color: $dried-blood;
     border-color: $tomato;
+  }
+  .card__icon:hover {
+    color: $white-two;
+    background-color: $tomato;
   }
 }
 
@@ -126,6 +140,10 @@
     color: $slate;
     border-color: $light-grey-blue;
   }
+  .card__icon:hover {
+    color: $slate;
+    background-color: $light-grey-blue;
+  }
 }
 
 .palette-4 {
@@ -138,5 +156,8 @@
   .card__icon {
     color: $honolulu-blue;
     border-color: $non-photo-blue;
+  }
+  .card__icon:hover {
+    background-color: $non-photo-blue;
   }
 }

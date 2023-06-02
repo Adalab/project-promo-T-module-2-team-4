@@ -26,8 +26,17 @@ const data = {
 };
 
 function renderPreview() {
-  previewName.innerHTML = data.full_name;
-  previewJob.innerHTML = data.job;
+  if (data.full_name === '') {
+    previewName.innerHTML = 'Nombre Apellido';
+  } else {
+    previewName.innerHTML = data.full_name;
+  }
+  if (data.job === '') {
+    previewJob.innerHTML = 'Front-end developer';
+  } else {
+    previewJob.innerHTML = data.job;
+  }
+
   previewMail.href = `mailto:${data.email}`;
   previewTelephone.href = `tel:${data.phone}`;
   previewLinkedIn.href = data.linkedin;

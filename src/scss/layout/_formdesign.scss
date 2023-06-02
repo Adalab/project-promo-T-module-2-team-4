@@ -1,6 +1,10 @@
 @media screen and (min-width: 768px) {
   .section__form {
-    background: linear-gradient(to bottom, $white-four, $white-two);
+    background: linear-gradient(
+      to bottom,
+      $white-four,
+      $white-two
+    );
     width: 50vw;
   }
   .central-column {
@@ -8,15 +12,15 @@
   }
 }
 .headerdesign {
-    display: flex;
-    padding: 10px 0 7px;
-    gap: 10px;
-    justify-content: left;
-    :hover {
-        cursor: pointer;
-    }
+  display: flex;
+  padding: 10px 0 7px;
+  gap: 10px;
+  justify-content: left;
+  :hover {
+    cursor: pointer;
+  }
 
-  .fa-regular {
+  .fa-solid {
     font-size: 1.8rem;
     color: $dull-orange;
   }

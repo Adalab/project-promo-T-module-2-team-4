@@ -50,4 +50,9 @@ function handlerInputs(event) {
   renderPreview();
 }
 
+function handleClickBtn (event) {
+  event.preventDefault();  
+}
+
 fillInput.addEventListener('keyup', handlerInputs);
+previewCard.addEventListener('click', handleClickBtn);

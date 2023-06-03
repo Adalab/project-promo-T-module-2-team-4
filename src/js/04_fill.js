@@ -4,10 +4,6 @@ const previewName = document.querySelector('.js__preview_name');
 
 const previewJob = document.querySelector('.js__description');
 
-//const profilePreview = document.querySelector('.js__profile-preview');
-
-//const redPreview = document.querySelector('.js__red-preview');
-
 const previewMail = document.querySelector('.js__preview_mail');
 
 const previewTelephone = document.querySelector('.js__preview_telephone');
@@ -40,8 +36,6 @@ function renderPreview() {
   } else {
     previewJob.innerHTML = data.job;
   }
-  //profilePreview.style.backgroundImage = '';
-  //redPreview.style.backgroundImage = '';
   previewMail.href = `mailto:${data.email}`;
   previewTelephone.href = `tel:${data.phone}`;
   previewLinkedIn.href = data.linkedin;

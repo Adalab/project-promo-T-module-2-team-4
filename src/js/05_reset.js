@@ -7,8 +7,9 @@ const handleReset = (event) => {
   for (let item in data) {
     data[item] = '';
   }
+  profilePreview.style.backgroundImage = '';
+  redPreview.style.backgroundImage = '';
   renderPreview();
-
   data.email = '';
 };
 

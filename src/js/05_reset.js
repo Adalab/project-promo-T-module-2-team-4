@@ -30,7 +30,6 @@ const handleReset = (event) => {
   shareContainer2.classList.add('collapsed');
   designContainer.classList.remove('collapsed');
   renderPreview();
-  data.email = '';
 };
 
 const handleMailBtn = (event) => {
@@ -53,7 +52,6 @@ const handleGitHubBtn = (event) => {
     event.preventDefault();
   }
 };
-
 resetBtn.addEventListener('click', handleReset);
 previewMail.addEventListener('click', handleMailBtn);
 previewTelephone.addEventListener('click', handleTelephoneBtn);

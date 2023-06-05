@@ -12,9 +12,7 @@
     padding: 10px 0 7px;
     gap: 10px;
     justify-content: left;
-    :hover {
-        cursor: pointer;
-    }
+    
 
   .fa-regular {
     font-size: 1.8rem;
@@ -32,6 +30,10 @@
     font-size: 1.8rem;
     color: $gunmetal;
   }
+}
+.headerdesign:hover {
+  cursor: pointer;
+  background: linear-gradient(to right, $silver, $pale-grey);
 }
 
 .contentdesign {

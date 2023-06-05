@@ -23,6 +23,12 @@ const handleReset = (event) => {
   telephoneInput.value = '';
   linkedinInput.value = '';
   githubInput.value = '';
+  shareButton.classList.remove('disabled__button');
+  shareButton.innerHTML =
+    '<i class="fa-regular fa-address-card"></i> CREAR TARJETA';
+  shareContainer.classList.add('collapsed');
+  shareContainer2.classList.add('collapsed');
+  designContainer.classList.remove('collapsed');
   renderPreview();
 };
 

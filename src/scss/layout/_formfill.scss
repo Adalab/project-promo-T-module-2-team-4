@@ -6,9 +6,7 @@
     padding: 10px 0 7px;
     gap: 10px;
     justify-content: left;
-    :hover {
-        cursor: pointer;
-    }
+    
     .fa-keyboard {
         font-size: 1.8rem;
         color: $dull-orange;
@@ -25,6 +23,10 @@
         font-size: 1.8rem;
         color: $gunmetal;
     }
+}
+.headerfill:hover {
+  cursor: pointer;
+  background: linear-gradient(to right, $silver, $pale-grey);
 }
 .contentfill {
   display: flex;

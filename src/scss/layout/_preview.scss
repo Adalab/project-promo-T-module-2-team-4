@@ -94,7 +94,10 @@
     width: 16px;
   }
 }
-
+.card__icon:hover {
+  color: $dirty-blue;
+  background-color: $hospital-green;
+}
 .palette-1 {
   .card__name {
     color: $dark-green-blue;
@@ -110,7 +113,6 @@
     color: $dirty-blue;
     background-color: $hospital-green;
   }
-  
 }
 .palette-2 {
   .card__name {

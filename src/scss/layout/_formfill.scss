@@ -2,27 +2,26 @@
   padding: 0 20px;
 }
 .headerfill {
-    display: flex;
-    padding: 10px 0 7px;
-    gap: 10px;
-    justify-content: left;
-    
-    .fa-keyboard {
-        font-size: 1.8rem;
-        color: $dull-orange;
-    }
-    &__title {
-        font-size: 1.8rem;
-        text-transform: uppercase;
-        font-weight: 600;
-        color: $gunmetal;
+  display: flex;
+  padding: 10px 0 7px;
+  gap: 10px;
+  justify-content: left;
 
-    }
-    .fa-angle-down {
-        margin-left: auto;
-        font-size: 1.8rem;
-        color: $gunmetal;
-    }
+  .fa-keyboard {
+    font-size: 1.8rem;
+    color: $dull-orange;
+  }
+  &__title {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $gunmetal;
+  }
+  .fa-angle-down {
+    margin-left: auto;
+    font-size: 1.8rem;
+    color: $gunmetal;
+  }
 }
 .headerfill:hover {
   cursor: pointer;
@@ -49,13 +48,16 @@
     line-height: 20px;
   }
   & .buttonaddimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 140px;
-    height: 30px;
-    background-color: $dull-orange;
-    color: $white-two;
+    background-color: #e17334;
+    color: #fff;
     border-radius: 3px;
-    box-shadow: 0 0 4px 0 $black-32;
-    padding: 3px 22px 7px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    padding-bottom: 1px;
+    font-size: 1.4rem;
   }
   & .add__image {
     display: inline-flex;

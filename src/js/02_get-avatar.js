@@ -15,9 +15,10 @@ function getImage(e) {
 function writeImage() {
   profilePreview.style.backgroundImage = `url(${fr.result})`;
   redPreview.style.backgroundImage = `url(${fr.result})`;
+  data.photo = fr.result;
 }
 
 fileField.addEventListener('change', getImage);
-fileField2.addEventListener('click', () => {
+/*fileField2.addEventListener('click', () => {
   fileField.click();
-});
+});*/

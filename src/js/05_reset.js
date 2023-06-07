@@ -29,6 +29,8 @@ const handleReset = (event) => {
   shareContainer.classList.add('collapsed');
   shareContainer2.classList.add('collapsed');
   designContainer.classList.remove('collapsed');
+  handleClickRadio1();
+  radio1.checked = true;
   renderPreview();
 };
 

@@ -15,10 +15,11 @@ const previewGitHub = document.querySelector('.js__preview_github');
 const fillInput = document.querySelector('.js__fill');
 
 const data = {
-  palete: 1,
-  full_name: '',
+  palette: 1,
+  name: '',
   job: '',
-  photo: '',
+  photo:
+    'https://s1.ppllstatics.com/lasprovincias/www/multimedia/202112/12/media/cortadas/gatos-kb2-U160232243326NVC-1248x770@Las%20Provincias.jpg',
   email: '',
   phone: '',
   linkedin: '',
@@ -26,10 +27,10 @@ const data = {
 };
 
 function renderPreview() {
-  if (data.full_name === '') {
+  if (data.name === '') {
     previewName.innerHTML = 'Nombre Apellido';
   } else {
-    previewName.innerHTML = data.full_name;
+    previewName.innerHTML = data.name;
   }
   if (data.job === '') {
     previewJob.innerHTML = 'Front-end developer';

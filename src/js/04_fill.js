@@ -18,8 +18,7 @@ const data = {
   palette: 1,
   name: '',
   job: '',
-  photo:
-    'https://s1.ppllstatics.com/lasprovincias/www/multimedia/202112/12/media/cortadas/gatos-kb2-U160232243326NVC-1248x770@Las%20Provincias.jpg',
+  photo: '',
   email: '',
   phone: '',
   linkedin: '',

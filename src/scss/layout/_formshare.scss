@@ -24,8 +24,10 @@ justify-content: space-around;
 }
 
 .text__created {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     margin-top: 15px;   
+    text-align: center;
+    padding-bottom: 10px;
 }
 .text__created::first-letter {
     text-transform: capitalize;

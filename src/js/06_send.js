@@ -3,16 +3,14 @@
 const linkUrl = document.querySelector('.js_url');
 const msgError = document.querySelector('.js_msg-error');
 const msgSuccess = document.querySelector('.js_success-msg');
-function msgAlert(message) {
-  msgError.innerHTML = '¡Atención! Ha olvidado completar algunos campos obligatorios';
+function msgAlert() {
+  msgError.innerHTML = '¡Atención! Ha olvidado completar algunos campos obligatorios*';
 }
 
 function handleClickCreateBtn(event) {
   event.preventDefault();
   console.log('se ha enviado');
   console.log(data);
-
-  //let message = '';
 
   if (data.name === '') {
     nameInput.classList.add('borderRedEmpty');
@@ -23,7 +21,7 @@ function handleClickCreateBtn(event) {
     //message += ('la profesión, ');
   } 
   if (data.photo === '') {
-    
+    redPreview.classList.add('borderRedEmpty');
     //message += ('la imagen, ');
   } 
   if (data.email === '') {
@@ -46,7 +44,9 @@ function handleClickCreateBtn(event) {
       });
   }
   else {
-    msgAlert(message);
+    msgAlert();
+    fillContainer.classList.remove('collapsed');
+    shareContainer2.classList.add('collapsed');
   }
 }
 

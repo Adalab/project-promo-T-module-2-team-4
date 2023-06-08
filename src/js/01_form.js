@@ -13,6 +13,7 @@ const shareLegend = document.querySelector('.js__share');
 const shareContainer = document.querySelector('.js__share__container');
 
 const shareContainer2 = document.querySelector('.js__share__container2');
+const shareButton = document.querySelector('.js__shareBtn');
 //const shareBorder3 = document.querySelector('.js__share__border3');
 
 designLegend.addEventListener('click', (event) => {
@@ -40,8 +41,7 @@ fillLegend.addEventListener('click', () => {
 });
 // shareBorder3.classList.add('collapsed');
 
-shareLegend.addEventListener('click', (event) =>{
-  // shareContainer2.classList.add('collapsed');
+shareLegend.addEventListener('click', (event) => {
   designContainer.classList.add('collapsed');
   fillContainer.classList.add('collapsed');
   shareContainer.classList.remove('collapsed');
@@ -51,3 +51,10 @@ shareLegend.addEventListener('click', (event) =>{
 });
 // shareContainer2.classList.add('collapsed');
 
+shareButton.addEventListener('click', (event) => {
+  event.preventDefault();
+  shareButton.classList.add('disabled__button');
+  shareButton.innerHTML =
+    '<i class="fa-regular fa-address-card"></i> TARJETA CREADA';
+  shareContainer2.classList.remove('collapsed');
+});

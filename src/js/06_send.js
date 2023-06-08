@@ -4,7 +4,7 @@ const linkUrl = document.querySelector('.js_url');
 const msgError = document.querySelector('.js_msg-error');
 const msgSuccess = document.querySelector('.js_success-msg');
 function msgAlert(message) {
-  msgError.innerHTML = message;
+  msgError.innerHTML = '¡Atención! Ha olvidado completar algunos campos obligatorios';
 }
 
 function handleClickCreateBtn(event) {
@@ -12,15 +12,26 @@ function handleClickCreateBtn(event) {
   console.log('se ha enviado');
   console.log(data);
 
+  //let message = '';
+
   if (data.name === '') {
-    msgAlert('Ha olvidado completar el nombre');
-  } else if (data.job === '') {
-    msgAlert('Ha olvidado completar la profesión');
-  } else if (data.photo === '') {
-    msgAlert('Ha olvidado añadir la imagen');
-  } else if (data.email === '') {
-    msgAlert('Ha olvidado completar el correo electrónico');
-  } else {
+    nameInput.classList.add('borderRedEmpty');
+    //message += ('el nombre, ');
+  } 
+  if (data.job === '') {
+    jobInput.classList.add('borderRedEmpty');
+    //message += ('la profesión, ');
+  } 
+  if (data.photo === '') {
+    
+    //message += ('la imagen, ');
+  } 
+  if (data.email === '') {
+    emailInput.classList.add('borderRedEmpty');
+    //message += ('el correo electrónico.');
+  } 
+  
+  if (data.name !== '' && data.job !== '' && data.photo !== '' && data.email !== '') {
     fetch('https://dev.adalab.es/api/card/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -33,6 +44,9 @@ function handleClickCreateBtn(event) {
         linkUrl.href = data.cardURL;
         msgSuccess.innerHTML = 'La tarjeta ha sido creada:';
       });
+  }
+  else {
+    msgAlert(message);
   }
 }
 

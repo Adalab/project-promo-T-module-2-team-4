@@ -40,6 +40,8 @@ function handleClickCreateBtn(event) {
         console.log(data);
         linkUrl.innerHTML = data.cardURL;
         linkUrl.href = data.cardURL;
+        shareButton.classList.add('disabled__button');
+        shareButton.innerHTML = '<i class="fa-regular fa-address-card"></i> TARJETA CREADA';
         msgSuccess.innerHTML = 'La tarjeta ha sido creada:';
       });
   }

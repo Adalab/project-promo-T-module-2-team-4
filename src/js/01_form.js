@@ -53,8 +53,5 @@ shareLegend.addEventListener('click', (event) => {
 
 shareButton.addEventListener('click', (event) => {
   event.preventDefault();
-  shareButton.classList.add('disabled__button');
-  shareButton.innerHTML =
-    '<i class="fa-regular fa-address-card"></i> TARJETA CREADA';
   shareContainer2.classList.remove('collapsed');
 });

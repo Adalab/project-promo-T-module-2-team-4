@@ -15,8 +15,8 @@ const previewGitHub = document.querySelector('.js__preview_github');
 const fillInput = document.querySelector('.js__fill');
 
 const data = {
-  palete: 1,
-  full_name: '',
+  palette: 1,
+  name: '',
   job: '',
   photo: '',
   email: '',
@@ -26,8 +26,16 @@ const data = {
 };
 
 function renderPreview() {
-  previewName.innerHTML = data.full_name;
-  previewJob.innerHTML = data.job;
+  if (data.name === '') {
+    previewName.innerHTML = 'Nombre Apellido';
+  } else {
+    previewName.innerHTML = data.name;
+  }
+  if (data.job === '') {
+    previewJob.innerHTML = 'Front-end developer';
+  } else {
+    previewJob.innerHTML = data.job;
+  }
   previewMail.href = `mailto:${data.email}`;
   previewTelephone.href = `tel:${data.phone}`;
   previewLinkedIn.href = data.linkedin;

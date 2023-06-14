@@ -3,14 +3,29 @@
 const linkUrl = document.querySelector('.js_url');
 const msgError = document.querySelector('.js_msg-error');
 const msgSuccess = document.querySelector('.js_success-msg');
+
 function msgAlert() {
-  msgError.innerHTML = '¡Atención! Ha olvidado completar algunos campos obligatorios*';
+  msgError.innerHTML += '¡Atención! Ha olvidado completar algunos campos obligatorios*';
 }
+
+function msgAlert2() {
+  msgError.innerHTML += '¡Atención! El correo electrónico no es válido*';
+}
+
+// function validateEmail(){
+//   const emailValue = emailInput.value;
+//   if (!emailValue.match(/^[^@]+@[^@]+\.[a-zA-Z]{2,}$/)) {
+//     msgAlert2();
+//     console.log('Estoy dentro de validate');
+//   }
+// };
+
 
 function handleClickCreateBtn(event) {
   event.preventDefault();
   console.log('se ha enviado');
   console.log(data);
+  const emailValue = emailInput.value;
 
   if (data.name === '') {
     nameInput.classList.add('borderRedEmpty');
@@ -27,7 +42,10 @@ function handleClickCreateBtn(event) {
   if (data.email === '') {
     emailInput.classList.add('borderRedEmpty');
     //message += ('el correo electrónico.');
-  } 
+  } else if (!emailValue.match(/^[^@]+@[^@]+\.[a-zA-Z]{2,}$/)) {
+    msgAlert2();
+    console.log('Estoy dentro de else if');
+  }
   
   if (data.name !== '' && data.job !== '' && data.photo !== '' && data.email !== '') {
     fetch('https://dev.adalab.es/api/card/', {
@@ -43,11 +61,17 @@ function handleClickCreateBtn(event) {
         msgSuccess.innerHTML = 'La tarjeta ha sido creada:';
       });
   }
+
   else {
     msgAlert();
     fillContainer.classList.remove('collapsed');
     shareContainer2.classList.add('collapsed');
   }
+  console.log('Estoy dentro de crear');
 }
+
+// validateEmail();
+console.log('Estoy fuera de validate');
+
 
 shareButton.addEventListener('click', handleClickCreateBtn);

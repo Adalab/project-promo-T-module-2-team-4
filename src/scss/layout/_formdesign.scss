@@ -1,16 +1,14 @@
 @media screen and (min-width: 768px) {
   .section__form {
-    background: linear-gradient(
-      to bottom,
-      $white-four,
-      $white-two
-    );
+    background: $gradient-main-bgd;
     width: 50vw;
   }
+
   .central-column {
     padding: 0;
   }
 }
+
 .headerdesign {
   display: flex;
   padding: 10px 0 7px;
@@ -19,24 +17,25 @@
 
   .fa-solid {
     font-size: 1.8rem;
-    color: $dull-orange;
+    color: $icon;
   }
 
   &__title {
     font-size: 1.8rem;
     font-weight: 600;
-    color: $gunmetal;
+    color: $legend;
   }
 
   .fa-angle-down {
     margin-left: auto;
     font-size: 1.8rem;
-    color: $gunmetal;
+    color: $arrow;
   }
 }
+
 .headerdesign:hover {
   cursor: pointer;
-  background: linear-gradient(to right, $silver, $pale-grey);
+  background: $gradient-preview-bgd;
 }
 
 .contentdesign {
@@ -48,7 +47,7 @@
   &__title {
     margin-left: 19px;
     font-size: 1.4rem;
-    color: $gunmetal;
+    color: $legend;
   }
 
   &__options {
@@ -70,19 +69,19 @@
     & .box1 {
       width: 30px;
       height: 25px;
-      background-color: $dark-green-blue;
+      background-color: $palette1-txt-icon;
     }
 
     & .box2 {
       width: 30px;
       height: 25px;
-      background-color: $dirty-blue;
+      background-color: $palette1-border-left;
     }
 
     & .box3 {
       width: 30px;
       height: 25px;
-      background-color: $hospital-green;
+      background-color: $palette1-icon-border;
     }
   }
 }
@@ -99,19 +98,19 @@
     & .box1 {
       width: 30px;
       height: 25px;
-      background-color: $dried-blood;
+      background-color: $palette2-txt-icon;
     }
 
     & .box2 {
       width: 30px;
       height: 25px;
-      background-color: $rusty-red;
+      background-color: $palette2-border-left;
     }
 
     & .box3 {
       width: 30px;
       height: 25px;
-      background-color: $tomato;
+      background-color: $palette2-icon-border;
     }
   }
 }
@@ -128,19 +127,19 @@
     & .box1 {
       width: 30px;
       height: 25px;
-      background-color: $slate;
+      background-color: $palette3-txt-icon;
     }
 
     & .box2 {
       width: 30px;
       height: 25px;
-      background-color: $faded-orange;
+      background-color: $palette3-border-left;
     }
 
     & .box3 {
       width: 30px;
       height: 25px;
-      background-color: $light-grey-blue;
+      background-color: $palette3-icon-border;
     }
   }
 }
@@ -157,19 +156,19 @@
     & .box1 {
       width: 30px;
       height: 25px;
-      background-color: $honolulu-blue;
+      background-color: $palette4-txt-icon;
     }
 
     & .box2 {
       width: 30px;
       height: 25px;
-      background-color: $pacific-cyan;
+      background-color: $palette4-border-left;
     }
 
     & .box3 {
       width: 30px;
       height: 25px;
-      background-color: $non-photo-blue;
+      background-color: $palette4-icon-border;
     }
   }
 }

@@ -2,45 +2,14 @@
   font-size: 62.5%;
   font-family: 'Open Sans', sans-serif;
 }
-/*COLORES*/
-$light-khaki: #f9f4dc;
-$tomato: #e95626; //palette two I
-$dried-blood: #420101; //palette two H
-$rusty-red: #bd1010; //palette two K
-$faded-orange: #eab052; //palette three M
-$light-grey-blue: #a0c0cf; //palette three N
-$azure: #00a0f5;
-$white: #d5d5d5;
-$black: #000;
-$gunmetal: #54585a; // font color (letras de rellena.... C
-$brownish-grey: #6b6b6b; //color copy footer S
-$slate: #3e5b65; //palette three L
-$white-two: #fff; //background color input and target E
-$hospital-green: #a2deaf; //palette one -border input F
-$silver: #bfcdd0; //background section target G
-$pale-grey: #dde9ed; //background section target H
-$dark-green-blue: #114e4e; //palette one and letras de input D
-$dirty-blue: #438792; //palette one J
-$dull-orange: #e17334; //principal color A
-$white-three: #d8d8d8; //border top footer T
-$white-four: #f5f5f5; //background landing and main page target B
-
-$pinkish-grey: #c5c5c5; //placeholder text I
-//border target Q
-
-// PALETA EXTRA DE COLORES:
-// Según el enunciado,también pone: Creatividad: Añadir más paletas a las definidas en el diseño,pero no eliminar las que os proponemos;) Tomada desde esta web: https: //coolors.co/palette/03045e-0077b6-00b4d8-90e0ef-caf0f8
-
-$honolulu-blue: #0077b6; //palette four Ñ
-$pacific-cyan: #00b4d8; //palette four O
-$non-photo-blue: #90e0ef; //palette four P
 
 /*TIPOGRAFIAS*/
 $font-main-title: 'Merriweather', serif;
 $font-secondary: 'Montserrat', sans-serif;
 
-//variables nuevas
-//Landing
+/*COLORES*/
+
+// Landing
 $landing-header-bgd: #f5f5f5;
 $landing-main-bgd: #f5f5f5;
 $landing-title: #e17334;
@@ -55,34 +24,38 @@ $landing-btn-hover-text: #438792;
 $landing-btn-hover-bgd: #fff;
 $footer-border: #d8d8d8;
 $footer-txt: #6b6b6b;
-//$footer-bgd: ;
-//profile
+
+
+// Profile
 $header-bgd: #fff;
-//$main-bgd: ; //gradient
+// ------ Design
 $icon: #e17334;
 $legend: #54585a;
 $arrow: #54585a;
+// ------ Fill 
 $label: #114e4e;
 $input-border: #a2deaf;
 $placeholder: #c5c5c5;
 $btn-addfile: #fff;
 $btn-addfile-bgd: #e17334;
+$btn-addfile-shadow: rgba(0, 0, 0, 0.32);
 $img-thumbnail: #a2deaf;
+$txt-msg: #114e4e;
 $container-line: #d8d8d8;
+// ------ Share 
 $btn-share: #fff;
 $btn-share-bgd: #e17334;
 $btn-share-border: #e17334;
 $btn-share-bgd-disabled: #d5d5d5;
 $txt: #fff;
 $txt-url: #e17334;
-$btn-li: #000;
-$btn-li-bgd: #d5d5d5;
-$btn-li-border: #a0c0cf;
+$btn-tw-border: #a0c0cf;
 $btn-tw: #fff;
 $btn-tw-bgd: #00a0f5;
-//$btn-ig: #fff;
-//$btn-ig-bgd: ; //gradient
-//$preview-bgd: ; //gradient
+$btn-disable-txt: #fff;
+$btn-disable-bgd: #d5d5d5;
+$btn-disable-border: #d5d5d5;
+// ------ Preview card
 $btn-reset-bgd: #bfcdd0;
 $btn-reset: #54585a;
 $btn-reset-border: #fff;
@@ -92,34 +65,39 @@ $txt-fullname: #114e4e;
 $txt-job: #54585a;
 $card-border-left: #438792;
 $card-bgd: #fff;
-//$card-shadow: ; //gradient
 $card-icon: #114e4e;
 $card-icon-border: #a2deaf;
 $card-icon-hover: #438792;
 $card-icon-hover-bgd: #a2deaf;
-//palette
+
+// Gradients & shadow colours
+$gradient-main-bgd: linear-gradient(to bottom, #f5f5f5, #fff);
+$gradient-preview-bgd: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+
+$black-32: rgba(0, 0, 0, 0.32);
+$black-20: rgba(0, 0, 0, 0.2);
+
+
+// COLOUR PALETTES
 $palette1-icon-border: #a2deaf;
 $palette1-txt-icon: #114e4e;
 $palette1-border-left: #438792;
 $palette1-icon-hover: #438792;
 $palette1-icon-bgd-hover: #a2deaf;
+// ------
 $palette2-icon-border: #e95626;
 $palette2-txt-icon: #420101;
 $palette2-border-left: #bd1010;
 $palette2-icon-hover: #fff;
 $palette2-icon-bgd-hover: #e95626;
+// ------
 $palette3-icon-border: #a0c0cf;
 $palette3-txt-icon: #3e5b65;
 $palette3-border-left: #eab052;
 $palette3-icon-hover: #3e5b65;
 $palette3-icon-bgd-hover: #a0c0cf;
+// ------
 $palette4-icon-border: #90e0ef;
 $palette4-txt-icon: #0077b6;
 $palette4-border-left: #00b4d8;
 $palette4-icon-bgd-hover: #90e0ef;
-//gradient
-$gradient-main-bgd: linear-gradient(to bottom, #f5f5f5, #fff);
-$gradient-preview-bgd: linear-gradient(to bottom, #bfcdd0, #dde9ed);
-//
-$black-32: rgba(0, 0, 0, 0.32);
-$black-20: rgba(0, 0, 0, 0.2);

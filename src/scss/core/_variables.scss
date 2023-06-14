@@ -39,3 +39,78 @@ $non-photo-blue: #90e0ef; //palette four P
 /*TIPOGRAFIAS*/
 $font-main-title: 'Merriweather', serif;
 $font-secondary: 'Montserrat', sans-serif;
+
+//variables nuevas
+//Landing
+$landing-header-bgd: #f5f5f5;
+$landing-main-bgd: #f5f5f5;
+$landing-title: #e17334;
+$landing-subtitle: #114e4e;
+$landing-box-text: #54585a;
+$landing-box-border: rgba(225, 115, 52, 0.2);
+$landing-icon: #e17334;
+$landing-btn-text: #fff;
+$landing-btn-bgd: #438792;
+$landing-btn-hover-shadow: #114e4e;
+$landing-btn-hover-text: #438792;
+$landing-btn-hover-bgd: #fff;
+$footer-border: #d8d8d8;
+$footer-txt: #6b6b6b;
+//$footer-bgd: ;
+//profile
+$header-bgd: #fff;
+//$main-bgd: ; //gradient
+$icon: #e17334;
+$legend: #54585a;
+$arrow: #54585a;
+$label: #114e4e;
+$input-border: #a2deaf;
+$placeholder: #c5c5c5;
+$btn-addfile: #fff;
+$btn-addfile-bgd: #e17334;
+$img-thumbnail: #a2deaf;
+$container-line: #d8d8d8;
+$btn-share: #fff;
+$btn-share-bgd: #e17334;
+$btn-share-border: #e17334;
+$btn-share-bgd-disabled: #d5d5d5;
+$txt: #fff;
+$txt-url: #e17334;
+$btn-li: #000;
+$btn-li-bgd: #d5d5d5;
+$btn-li-border: #a0c0cf;
+$btn-tw: #fff;
+$btn-tw-bgd: #00a0f5;
+//$btn-ig: #fff;
+//$btn-ig-bgd: ; //gradient
+//$preview-bgd: ; //gradient
+$btn-reset-bgd: #bfcdd0;
+$btn-reset: #54585a;
+$btn-reset-border: #fff;
+$btn-reset-bgd-hover: #fff;
+$btn-reset-hover-shadow: #114e4e;
+$txt-fullname: #114e4e;
+$txt-job: #54585a;
+$card-border-left: #438792;
+$card-bgd: #fff;
+//$card-shadow: ; //gradient
+$card-icon: #114e4e;
+$card-icon-border: #a2deaf;
+$card-icon-hover: #438792;
+$card-icon-hover-bgd: #a2deaf;
+//palette
+$palette1-icon-border: #a2deaf;
+$palette1-txt-icon: #114e4e;
+$palette1-border-left: #438792;
+$palette2-icon-border: #e95626;
+$palette2-txt-icon: #420101;
+$palette2-border-left: #bd1010;
+$palette3-icon-border: #a0c0cf;
+$palette3-txt-icon: #3e5b65;
+$palette3-border-left: #eab052;
+$palette4-icon-border: #90e0ef;
+$palette4-txt-icon: #0077b6;
+$palette4-border-left: #00b4d8;
+//gradient
+$gradient-main-bgd: linear-gradient(to bottom, #f5f5f5, #fff);
+$gradient-preview-bgd: linear-gradient(to bottom, #bfcdd0, #dde9ed);

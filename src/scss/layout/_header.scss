@@ -1,5 +1,5 @@
 .header__landing {
-  background: $white-four;
+  background: $landing-header-bgd;
   height: 40vh;
   padding: 0 35px 0;
   display: flex;
@@ -7,8 +7,8 @@
   align-items: flex-end;
 
   & .imagen {
-  height: 63px;
-  //padding-bottom: 35.4px;
+    height: 63px;
+    //padding-bottom: 35.4px;
     @media screen and (min-width: 768px) {
       height: 105px;
     }
@@ -19,7 +19,7 @@
   }
 }
 .header__profile {
-  background-color: $white-two;
+  background-color: $header-bgd;
   height: 10vh;
   display: flex;
   align-items: center;

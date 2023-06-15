@@ -1,243 +1,269 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&family=Montserrat:wght@600&family=Open+Sans:wght@400;500;600&display=swap"
-    rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/1aa62fa5ff.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./assets/css/main.css" />
-  <link rel="icon" href="./assets/images/favicon_2.png" />
-  <title>Awesome Profile Cards</title>
-</head>
-
-<body class="body">
-  <header class="header__profile">
-    <img
-      class="imagen"
-      src="./assets/images/logo-awesome-profile-cards.svg"
-      alt="Logo de Awesome Profile Cards"
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Merriweather+Sans:wght@700&family=Montserrat:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
     />
-  </header>
+    <script
+      src="https://kit.fontawesome.com/1aa62fa5ff.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" href="./assets/images/favicon_2.png" />
+    <title>Adalab Tech Summit</title>
+  </head>
 
-  <main class="main">
-    <section class="preview">
-      <article class="card__preview columnsection1">
-        <button class="preview__button js__resetbtn">
-          <i class="fa-regular fa-trash-can" class="preview__button-icon"></i>
-          reset
-        </button>
-        <article class="card js__preview">
-          <div class="container_namedescription">
-            <h3 class="card__name js__preview_name">nombre apellido</h3>
-            <p class="card__description js__description">Front-end developer</p>
-          </div>
-          <img class="card__img js__profile-preview" alt="" />
-          <nav class="card__nav js__navPreview">
-            <a class="card__icon js__preview_mail" href=""
-              ><i class="fa-regular fa-envelope fa-xl"></i
-            ></a>
-            <a class="card__icon js__preview_telephone" href=""
-              ><i class="fa-solid fa-mobile-screen-button fa-xl"></i
-            ></a>
-            <a class="card__icon js__preview_linkedin" target="_blank" href=""
-              ><i class="fa-brands fa-linkedin-in fa-xl"></i
-            ></a>
-            <a class="card__icon js__preview_github" target="_blank" href=""
-              ><i class="fa-brands fa-github-alt fa-xl"></i
-            ></a>
-          </nav>
-        </article>
-      </article>
-    </section>
-
-    <section class="section__form">
-      <form>
-        <fieldset class="central-column">
-          <div class="headerdesign js__design">
-            <i class="fa-solid fa-palette"></i>
-            <h3 class="headerdesign__title">DISEÑA</h3>
-            <i class="fa-solid fa-angle-down rotate js_arrow-1"></i>
-          </div>
-
-          <div class="contentdesign js__design__container">
-            <h3 class="contentdesign__title">COLORES</h3>
-            <div class="contentdesign__options">
-              <label for="design1" class="design1">
-                <input
-                  class="js_radio js_radio-1"
-                  id="design1"
-                  type="radio"
-                  name="palette"
-                  checked
-                />
-                <div class="design1__palette">
-                  <div class="box1"></div>
-                  <div class="box2"></div>
-                  <div class="box3"></div>
-                </div>
-              </label>
-              <label for="design2" class="design2">
-                <input
-                  class="js_radio js_radio-2"
-                  id="design2"
-                  type="radio"
-                  name="palette"
-                />
-                <div class="design2__palette">
-                  <div class="box1"></div>
-                  <div class="box2"></div>
-                  <div class="box3"></div>
-                </div>
-              </label>
-              <label for="design3" class="design3">
-                <input
-                  class="js_radio js_radio-3"
-                  id="design3"
-                  type="radio"
-                  name="palette"
-                />
-                <div class="design3__palette">
-                  <div class="box1"></div>
-                  <div class="box2"></div>
-                  <div class="box3"></div>
-                </div>
-              </label>
-              <label for="design4" class="design4">
-                <input
-                  class="js_radio js_radio-4"
-                  id="design4"
-                  type="radio"
-                  name="palette"
-                />
-                <div class="design4__palette">
-                  <div class="box1"></div>
-                  <div class="box2"></div>
-                  <div class="box3"></div>
-                </div>
-              </label>
-            </div>
-          </div>
-        </fieldset>
-
-        <fieldset class="central-column js__fill">
-          <div class="headerfill border">
-            <i class="fa-regular fa-keyboard"></i>
-            <h3 class="headerfill__title">rellena</h3>
-            <i class="fa-solid fa-angle-down js_arrow-2"></i>
-          </div>
-          <div class="contentfill collapsed js__fill__container">
-            <label class="contentfill__label" for="name">Nombre completo*</label>
-            <input
-              class="contentfill__input js__name js_input"
-              placeholder="Ej: Sally Jill"
-              id="name"
-              type="text"
-              name="name"
-            />
-            <label class="contentfill__label" for="job">Profesión*</label>
-            <input
-              class="contentfill__input js__job"
-              placeholder="Ej: Desarrolladora front-end"
-              id="job"
-              type="text"
-              name="job"
-            />
-
-            <label class="contentfill__label" for="hidden__addfile">Imagen de perfil*</label>
-            <div class="profile">
-              <div class="add__image">
-                <input
-                  class="contentfill__input js__profile-upload-btn"
-                  hidden
-                  id="hidden__addfile"
-                  type="file"
-                  name="hidden__addfile"
-                  value="Añadir imagen"
-                />
-                <label class="contentfill__input buttonaddimg" for="hidden__addfile">Añadir imagen</label>
-              </div>
-              <div class="profile__preview js__red-preview"></div>
-            </div>
-            <label class="contentfill__label" for="email">Correo electrónico*</label>
-            <input
-              class="contentfill__input js__email"
-              placeholder="Ej: sally-hill@gmail.com"
-              id="email"
-              type="email"
-              name="email"
-            />
-            <label class="contentfill__label" for="phone">Teléfono</label>
-            <input
-              class="contentfill__input js__telephone"
-              placeholder="Ej: 555-55-55-55"
-              id="phone"
-              type="tel"
-              name="phone"
-            />
-            <label class="contentfill__label" for="linkedin">Linkedin</label>
-            <input
-              class="contentfill__input js__linkedin"
-              placeholder="Ej: linkedin.com/in/sally.hill"
-              id="linkedin"
-              type="url"
-              name="linkedin"
-            />
-            <label class="contentfill__label" for="github">Github</label>
-            <input
-              class="contentfill__input js__github"
-              placeholder="Ej: @sally-hill"
-              id="github"
-              type="text"
-              name="github"
-            />
-            <small class="msg_fieldRequired">Campos obligatorios*</small>
-          </div>
-        </fieldset>
-
-        <fieldset class="central-column">
-          <div class="headerfill border js__share">
-            <i class="fa-solid fa-share-nodes"></i>
-            <h3 class="headerfill__title">comparte</h3>
-            <i class="fa-solid fa-angle-down js_arrow-3"></i>
-          </div>
-          <span class="span__share collapsed js__share__container">
-            <button class="share__button js__shareBtn">
-              <i class="fa-regular fa-address-card"></i>
-              crear tarjeta
-            </button>
-            <p class="text__created js_msg-error"></p>
-          </span>
-          <div class="border"></div>
-          <fieldset class="buttons__rrss collapsed js__share__container2">
-            <p class="text__created js_success-msg"></p>
-            <a href="" target="_blank" class="imagen_creada js_url"></a>
-            <button class="rrss__button">
-              <span> <i class="fa-brands fa-twitter" style="color: #ffffff"></i> </span
-              >Compartir en Twitter
-            </button>
-          </fieldset>
-          <div class="border js__share__border3"></div>
-        </fieldset>
-
-      </form>
-    </section>
-  </main>
-  <footer>
-    <footer class="footer">
-      <small class="footer__copy">Awesone profile-cards &copy; 2023</small>
-      <a class="footer__logo" href="https://adalab.es/" target="_blank" title="Adalab">
-        <img class="footer__logo--img" src="./assets/images/logo-adalab.png" alt="Logo Adalab" />
+  <body class="body">
+    <header class="header__profile">
+      <a href="https://adalab.es/blog/" target="_blank">
+        <img
+          class="imagen"
+          src="./assets/images/logo-awesome-profile-cards.svg"
+          alt="Logo de Awesome Profile Cards"
+        />
       </a>
+    </header>
+
+    <main class="main">
+      <section class="preview">
+        <article class="card__preview columnsection1">
+          <button class="preview__button js__resetbtn">
+            <i class="fa-regular fa-trash-can" class="preview__button-icon"></i>
+            reset
+          </button>
+          <article class="card js__preview">
+            <div class="container_namedescription">
+              <h3 class="card__name js__preview_name">nombre apellido</h3>
+              <p class="card__description js__description">Front-end developer</p>
+            </div>
+            <img class="card__img js__profile-preview" alt="" />
+            <nav class="card__nav js__navPreview">
+              <a class="card__icon js__preview_mail" href=""
+                ><i class="fa-regular fa-envelope fa-xl"></i
+              ></a>
+              <a class="card__icon js__preview_telephone" href=""
+                ><i class="fa-solid fa-mobile-screen-button fa-xl"></i
+              ></a>
+              <a class="card__icon js__preview_linkedin" target="_blank" href=""
+                ><i class="fa-brands fa-linkedin-in fa-xl"></i
+              ></a>
+              <a class="card__icon js__preview_github" target="_blank" href=""
+                ><i class="fa-brands fa-github-alt fa-xl"></i
+              ></a>
+            </nav>
+          </article>
+        </article>
+      </section>
+
+      <section class="section__form">
+        <form>
+          <fieldset class="central-column">
+            <div class="headerdesign js__design">
+              <i class="fa-solid fa-palette"></i>
+              <h3 class="headerdesign__title">DESIGN</h3>
+              <i class="fa-solid fa-angle-down rotate js_arrow-1"></i>
+            </div>
+
+            <div class="contentdesign js__design__container">
+              <h3 class="contentdesign__title">SELECT YOUR CATEGORY:</h3>
+              <div class="contentdesign__options">
+                <div class="label">
+                  <label for="design1" class="lbtext design1">Organizers</label>
+                  <input
+                    class="js_radio js_radio-1"
+                    id="design1"
+                    type="radio"
+                    name="palette"
+                    checked
+                  />
+                  <div class="design1__palette">
+                    <div class="box1"></div>
+                    <div class="box2"></div>
+                    <div class="box3"></div>
+                  </div>
+                </div>
+                <div class="label">
+                  <label for="design2" class="lbtext design2">Guests</label>
+                  <input
+                    class="js_radio js_radio-2"
+                    id="design2"
+                    type="radio"
+                    name="palette"
+                  />
+                  <div class="design2__palette">
+                    <div class="box1"></div>
+                    <div class="box2"></div>
+                    <div class="box3"></div>
+                  </div>
+                </div>
+
+                <div class="label">
+                  <label for="design3" class="lbtext design3">Adalabers</label>
+                  <input
+                    class="js_radio js_radio-3"
+                    id="design3"
+                    type="radio"
+                    name="palette"
+                  />
+                  <div class="design3__palette">
+                    <div class="box1"></div>
+                    <div class="box2"></div>
+                    <div class="box3"></div>
+                  </div>
+                </div>
+
+                <div class="label">
+                  <label for="design4" class="lbtext design4">Speakers</label>
+                  <input
+                    class="js_radio js_radio-4"
+                    id="design4"
+                    type="radio"
+                    name="palette"
+                  />
+                  <div class="design4__palette">
+                    <div class="box1"></div>
+                    <div class="box2"></div>
+                    <div class="box3"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="central-column js__fill">
+            <div class="headerfill border">
+              <i class="fa-regular fa-keyboard"></i>
+              <h3 class="headerfill__title">fill</h3>
+              <i class="fa-solid fa-angle-down js_arrow-2"></i>
+            </div>
+            <div class="contentfill collapsed js__fill__container">
+              <label class="contentfill__label" for="name">Full name*</label>
+              <input
+                class="contentfill__input js__name js_input"
+                placeholder="E.g.: Sally Jill"
+                id="name"
+                type="text"
+                name="name"
+              />
+              <label class="contentfill__label" for="job">Job*</label>
+              <input
+                class="contentfill__input js__job"
+                placeholder="E.g.: Front-end developer"
+                id="job"
+                type="text"
+                name="job"
+              />
+
+              <label class="contentfill__label" for="hidden__addfile"
+                >Profile image*</label
+              >
+              <div class="profile">
+                <div class="add__image">
+                  <input
+                    class="contentfill__input js__profile-upload-btn"
+                    hidden
+                    id="hidden__addfile"
+                    type="file"
+                    name="hidden__addfile"
+                    value="Add image"
+                  />
+                  <label class="contentfill__input buttonaddimg" for="hidden__addfile"
+                    >Add image</label
+                  >
+                </div>
+                <div class="profile__preview js__red-preview"></div>
+              </div>
+              <label class="contentfill__label" for="email">Email*</label>
+              <input
+                class="contentfill__input js__email"
+                placeholder="E.g.: sally-hill@gmail.com"
+                id="email"
+                type="email"
+                name="email"
+                pattern="/^[^@]+@[^@]+\.[a-zA-Z]{2,}$/"
+                required="required"
+              />
+              <label class="contentfill__label" for="phone">Telephone</label>
+              <input
+                class="contentfill__input js__telephone"
+                placeholder="E.g.: 555-55-55-55"
+                id="phone"
+                type="tel"
+                name="phone"
+              />
+              <label class="contentfill__label" for="linkedin">LinkedIn</label>
+              <input
+                class="contentfill__input js__linkedin"
+                placeholder="E.g.: linkedin.com/in/sally.hill"
+                id="linkedin"
+                type="url"
+                name="linkedin"
+              />
+              <label class="contentfill__label" for="github">Github</label>
+              <input
+                class="contentfill__input js__github"
+                placeholder="E.g.: @sally-hill"
+                id="github"
+                type="text"
+                name="github"
+              />
+              <small class="msg_fieldRequired">Required fields*</small>
+            </div>
+          </fieldset>
+
+          <fieldset class="central-column">
+            <div class="headerfill border js__share">
+              <i class="fa-solid fa-share-nodes"></i>
+              <h3 class="headerfill__title">share</h3>
+              <i class="fa-solid fa-angle-down js_arrow-3"></i>
+            </div>
+            <span class="span__share collapsed js__share__container">
+              <button class="share__button js__shareBtn">
+                <i class="fa-regular fa-address-card"></i>
+                create card
+              </button>
+              <p class="text__created js_msg-error"></p>
+              <p class="text__created js_msg-errorMail"></p>
+            </span>
+            <div class="border"></div>
+            <fieldset class="buttons__rrss collapsed js__share__container2">
+              <p class="text__created js_success-msg"></p>
+              <a href="" target="_blank" class="imagen_creada js_url"></a>
+              <a class="rrss__button js_btnTw" href="" target="_blank">
+                <span> <i class="fa-brands fa-twitter" style="color: #ffffff"></i> </span
+                >Share on Twitter
+              </a>
+            </fieldset>
+            <div class="border js__share__border3"></div>
+          </fieldset>
+
+        </form>
+      </section>
+    </main>
+    <footer>
+      <footer class="footer">
+        <small class="footer__copy">Adalab Tech Summit &copy; 2023</small>
+        <a
+          class="footer__logo"
+          href="https://adalab.es/"
+          target="_blank"
+          title="Adalab"
+        >
+          <img
+            class="footer__logo--img"
+            src="./assets/images/logo-adalab.png"
+            alt="Logo Adalab"
+          />
+        </a>
+      </footer>
+
     </footer>
-
-  </footer>
-  <script src="./assets/js/main.js"></script>
-</body>
-
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>

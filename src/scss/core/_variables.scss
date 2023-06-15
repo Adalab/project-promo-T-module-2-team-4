@@ -6,49 +6,53 @@
 /*TIPOGRAFIAS*/
 $font-main-title: 'Merriweather', serif;
 $font-secondary: 'Montserrat', sans-serif;
+$font-secondary2: 'Bebas Neue',sans-serif;
+$font-secondary3: 'Libre Caslon Display',serif;
+$font-secondary4: 'Libre Caslon Text',serif;
 
 /*COLORES*/
 
 // Landing
 $landing-header-bgd: #f5f5f5;
 $landing-main-bgd: #f5f5f5;
-$landing-title: #e17334;
-$landing-subtitle: #114e4e;
-$landing-box-text: #54585a;
-$landing-box-border: rgba(225, 115, 52, 0.2);
-$landing-icon: #e17334;
+$landing-title: black;
+$landing-subtitle: rgb(49, 49, 49);
+$landing-box-text: #c93825;
+$landing-box-border: #c93825;
+$landing-box-border2: #2f9f8d;
+$landing-icon: #2f9f8d;
 $landing-btn-text: #fff;
-$landing-btn-bgd: #438792;
+$landing-btn-bgd: #2f9f8d;
 $landing-btn-hover-shadow: #114e4e;
-$landing-btn-hover-text: #438792;
+$landing-btn-hover-text: #2f9f8d;
 $landing-btn-hover-bgd: #fff;
 $footer-border: #d8d8d8;
 $footer-txt: #6b6b6b;
 
 
 // Profile
-$header-bgd: #fff;
+$header-bgd: f5f5f5;
 // ------ Design
-$icon: #e17334;
-$legend: #54585a;
-$arrow: #54585a;
+$icon: #2f9f8d;
+$legend:  #5e8881;
+$arrow:  #59706c;
 // ------ Fill 
 $label: #114e4e;
-$input-border: #a2deaf;
+$input-border: #2f9f8cc9;
 $placeholder: #c5c5c5;
 $btn-addfile: #fff;
-$btn-addfile-bgd: #e17334;
+$btn-addfile-bgd: #ec2b11cc;
 $btn-addfile-shadow: rgba(0, 0, 0, 0.32);
-$img-thumbnail: #a2deaf;
+$img-thumbnail: #2f9f8cc9;
 $txt-msg: #114e4e;
 $container-line: #d8d8d8;
 // ------ Share 
 $btn-share: #fff;
-$btn-share-bgd: #e17334;
-$btn-share-border: #e17334;
+$btn-share-bgd: #2f9f8c;
+$btn-share-border: #2f9f8cc9;
 $btn-share-bgd-disabled: #d5d5d5;
 $txt: #fff;
-$txt-url: #e17334;
+$txt-url: #c93825;
 $btn-tw-border: #a0c0cf;
 $btn-tw: #fff;
 $btn-tw-bgd: #00a0f5;
@@ -57,8 +61,8 @@ $btn-disable-bgd: #d5d5d5;
 $btn-disable-border: #d5d5d5;
 // ------ Preview card
 $btn-reset-bgd: #bfcdd0;
-$btn-reset: #54585a;
-$btn-reset-border: #fff;
+$btn-reset: #2f9f8cf1;
+$btn-reset-border: #2f9f8c9a;
 $btn-reset-bgd-hover: #fff;
 $btn-reset-hover-shadow: #114e4e;
 $txt-fullname: #114e4e;

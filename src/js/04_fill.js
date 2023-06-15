@@ -36,6 +36,7 @@ function renderPreview() {
   } else {
     previewJob.innerHTML = data.job;
   }
+
   previewMail.href = `mailto:${data.email}`;
   previewTelephone.href = `tel:${data.phone}`;
   previewLinkedIn.href = data.linkedin;

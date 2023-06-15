@@ -6,9 +6,11 @@ const profilePreview = document.querySelector('.js__profile-preview');
 const redPreview = document.querySelector('.js__red-preview');
 
 function getImage(e) {
-  const myFile = e.currentTarget.files[0];
-  fr.addEventListener('load', writeImage);
-  fr.readAsDataURL(myFile);
+  for (let i = 0; i <= i++; i++) {
+    const myFile = e.currentTarget.files[i];
+    fr.addEventListener('load', writeImage);
+    fr.readAsDataURL(myFile);
+  }
 }
 
 function writeImage() {

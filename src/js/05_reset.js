@@ -32,6 +32,7 @@ const handleReset = (event) => {
   handleClickRadio1();
   radio1.checked = true;
   renderPreview();
+  fileField.addEventListener('change', getImage);
 };
 
 const handleMailBtn = (event) => {

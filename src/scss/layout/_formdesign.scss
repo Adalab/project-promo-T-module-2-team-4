@@ -8,6 +8,19 @@
     padding: 0;
   }
 }
+.label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.lbtext {
+  color: $label2;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
 
 .headerdesign {
   display: flex;
@@ -46,7 +59,7 @@
 
   &__title {
     margin-left: 19px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: $legend;
   }
 

@@ -2,15 +2,16 @@
 
 const linkUrl = document.querySelector('.js_url');
 const msgError = document.querySelector('.js_msg-error');
+const msgErrorMail = document.querySelector('.js_msg-errorMail');
 const msgSuccess = document.querySelector('.js_success-msg');
 const btnTwitter = document.querySelector('.js_btnTw');
 function msgAlert() {
-  msgError.innerHTML +=
-    '¡Atención! Ha olvidado completar algunos campos obligatorios*';
+  msgError.innerHTML =
+    'Attention! You have forgotten to complete some required fields*';
 }
 
 function msgAlert2() {
-  msgError.innerHTML += ' El correo electrónico no es válido*';
+  msgErrorMail.innerHTML = ' The e-mail format is not valid*';
 }
 const setLocalStorage = () => {
   localStorage.setItem('infoCard', JSON.stringify(data));
@@ -21,7 +22,6 @@ const getLocalStorage = () => {
     data = JSON.parse(dataCard);
   }
   renderPreview();
-  //writeImage();
 };
 getLocalStorage();
 
@@ -33,34 +33,30 @@ const sendApiData = () => {
   })
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
       linkUrl.innerHTML = data.cardURL;
       linkUrl.href = data.cardURL;
       btnTwitter.href = `https://twitter.com/intent/tweet?url=${linkUrl.href}&text=Ya%20estoy%20suscrita%20al%20Adalab%20Tech%20Summit%21%21%21&hashtags=Adalab`;
-      msgSuccess.innerHTML = 'La tarjeta ha sido creada:';
+      shareButton.classList.add('disabled__button');
+      shareButton.innerHTML =
+        '<i class="fa-regular fa-address-card"></i> CREATED CARD';
+      msgSuccess.innerHTML = 'Your card has been created:';
     });
 };
 
 function handleClickCreateBtn(event) {
   event.preventDefault();
-  console.log('se ha enviado');
-  console.log(data);
   const emailValue = emailInput.value;
   if (data.name === '') {
     nameInput.classList.add('borderRedEmpty');
-    //message += ('el nombre, ');
   }
   if (data.job === '') {
     jobInput.classList.add('borderRedEmpty');
-    //message += ('la profesión, ');
   }
   if (data.photo === '') {
     redPreview.classList.add('borderRedEmpty');
-    //message += ('la imagen, ');
   }
   if (data.email === '') {
     emailInput.classList.add('borderRedEmpty');
-    //message += ('el correo electrónico.');
   }
   if (
     data.name !== '' &&
@@ -76,7 +72,6 @@ function handleClickCreateBtn(event) {
   }
   if (!emailValue.match(/^[^@]+@[^@]+\.[a-zA-Z]{2,}$/)) {
     msgAlert2();
-    console.log('Estoy dentro de else if');
   }
   setLocalStorage();
 }

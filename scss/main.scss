@@ -11,6 +11,7 @@
 .collapsed {
   display: none;
 }
+
 .rotate {
   transform: rotate(180deg);
 }
@@ -18,13 +19,4 @@
 .body {
   height: 100vh;
   //width: 100%;
-}
-
-.disabled__button {
-  background-color: $white;
-  border: solid $white;
-}
-
-.borderRedEmpty {
-  border-color: red;
 }

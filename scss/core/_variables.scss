@@ -1,42 +1,103 @@
-:root{
-    font-size: 62.5%;
-    font-family:"Open Sans",sans-serif;
+:root {
+  font-size: 62.5%;
+  font-family: 'Open Sans', sans-serif;
 }
-  /*COLORES*/
-    $light-khaki: #f9f4dc;
-    $black-20: rgba(0, 0, 0, 0.2);
-    $tomato: #e95626;
-    $dried-blood: #420101;
-    $rusty-red: #bd1010;
-    $faded-orange: #eab052;
-    $light-grey-blue: #a0c0cf;
-    $azure: #00a0f5;
-    $white: #d5d5d5;
-    $black: #000;
-    $gunmetal: #54585a;
-    $brownish-grey: #6b6b6b;
-    $slate: #3e5b65;
-    $white-two: #fff;
-    $hospital-green: #a2deaf;
-    $silver: #bfcdd0;
-    $pale-grey: #dde9ed;
-    $dark-green-blue: #114e4e;
-    $dirty-blue: #438792;
-    $dull-orange: #e17334;
-    $white-three: #d8d8d8;
-    $white-four: #f5f5f5;
-    $pinkish-grey: #c5c5c5;
-    $black-32: rgba(0, 0, 0, 0.32);
-    
 
-    // PALETA EXTRA DE COLORES: 
-        // Según el enunciado,también pone: Creatividad: Añadir más paletas a las definidas en el diseño,pero no eliminar las que os proponemos;) Tomada desde esta web: https: //coolors.co/palette/03045e-0077b6-00b4d8-90e0ef-caf0f8 
-    
-    $honolulu-blue: #0077b6;
-    $pacific-cyan: #00B4D8;
-    $non-photo-blue: #90E0EF;
+/*TIPOGRAFIAS*/
+$font-main-title: 'Merriweather', serif;
+$font-secondary: 'Montserrat', sans-serif;
+
+/*COLORES*/
+
+// Landing
+$landing-header-bgd: #f5f5f5;
+$landing-main-bgd: #f5f5f5;
+$landing-title: #e17334;
+$landing-subtitle: #114e4e;
+$landing-box-text: #54585a;
+$landing-box-border: rgba(225, 115, 52, 0.2);
+$landing-icon: #e17334;
+$landing-btn-text: #fff;
+$landing-btn-bgd: #438792;
+$landing-btn-hover-shadow: #114e4e;
+$landing-btn-hover-text: #438792;
+$landing-btn-hover-bgd: #fff;
+$footer-border: #d8d8d8;
+$footer-txt: #6b6b6b;
 
 
-    /*TIPOGRAFIAS*/
-    $font-main-title: 'Merriweather',serif;
-    $font-secondary:'Montserrat',sans-serif;
+// Profile
+$header-bgd: #fff;
+// ------ Design
+$icon: #e17334;
+$legend: #54585a;
+$arrow: #54585a;
+// ------ Fill 
+$label: #114e4e;
+$input-border: #a2deaf;
+$placeholder: #c5c5c5;
+$btn-addfile: #fff;
+$btn-addfile-bgd: #e17334;
+$btn-addfile-shadow: rgba(0, 0, 0, 0.32);
+$img-thumbnail: #a2deaf;
+$txt-msg: #114e4e;
+$container-line: #d8d8d8;
+// ------ Share 
+$btn-share: #fff;
+$btn-share-bgd: #e17334;
+$btn-share-border: #e17334;
+$btn-share-bgd-disabled: #d5d5d5;
+$txt: #fff;
+$txt-url: #e17334;
+$btn-tw-border: #a0c0cf;
+$btn-tw: #fff;
+$btn-tw-bgd: #00a0f5;
+$btn-disable-txt: #fff;
+$btn-disable-bgd: #d5d5d5;
+$btn-disable-border: #d5d5d5;
+// ------ Preview card
+$btn-reset-bgd: #bfcdd0;
+$btn-reset: #54585a;
+$btn-reset-border: #fff;
+$btn-reset-bgd-hover: #fff;
+$btn-reset-hover-shadow: #114e4e;
+$txt-fullname: #114e4e;
+$txt-job: #54585a;
+$card-border-left: #438792;
+$card-bgd: #fff;
+$card-icon: #114e4e;
+$card-icon-border: #a2deaf;
+$card-icon-hover: #438792;
+$card-icon-hover-bgd: #a2deaf;
+
+// Gradients & shadow colours
+$gradient-main-bgd: linear-gradient(to bottom, #f5f5f5, #fff);
+$gradient-preview-bgd: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+
+$black-32: rgba(0, 0, 0, 0.32);
+$black-20: rgba(0, 0, 0, 0.2);
+
+
+// COLOUR PALETTES
+$palette1-icon-border: #a2deaf;
+$palette1-txt-icon: #114e4e;
+$palette1-border-left: #438792;
+$palette1-icon-hover: #438792;
+$palette1-icon-bgd-hover: #a2deaf;
+// ------
+$palette2-icon-border: #e95626;
+$palette2-txt-icon: #420101;
+$palette2-border-left: #bd1010;
+$palette2-icon-hover: #fff;
+$palette2-icon-bgd-hover: #e95626;
+// ------
+$palette3-icon-border: #a0c0cf;
+$palette3-txt-icon: #3e5b65;
+$palette3-border-left: #eab052;
+$palette3-icon-hover: #3e5b65;
+$palette3-icon-bgd-hover: #a0c0cf;
+// ------
+$palette4-icon-border: #90e0ef;
+$palette4-txt-icon: #0077b6;
+$palette4-border-left: #00b4d8;
+$palette4-icon-bgd-hover: #90e0ef;

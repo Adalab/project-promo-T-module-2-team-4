@@ -1,10 +1,10 @@
 .footer {
   text-align: center;
-  border-top: solid 1px $white-three;
+  border-top: solid 1px $footer-border;
   padding: 20px 0;
   height: 10vh;
   &__copy {
-    color: $brownish-grey;
+    color: $footer-txt;
     display: block;
     opacity: 0.5;
     font-size: 1.4rem;

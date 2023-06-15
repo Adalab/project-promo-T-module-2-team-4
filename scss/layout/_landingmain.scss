@@ -1,5 +1,5 @@
 .landing {
-  background-color: $white-four;
+  background-color: $landing-main-bgd;
   text-align: center;
   padding: 35px 26px 40px;
   height: 50vh;
@@ -14,7 +14,7 @@
     align-items: center;
     &--h1 {
       font-family: $font-main-title;
-      color: $dull-orange;
+      color: $landing-title;
       font-size: 1.9rem;
       font-weight: 900;
       text-align: center;
@@ -23,7 +23,7 @@
       }
     }
     &--p {
-      color: $dark-green-blue;
+      color: $landing-subtitle;
       font-size: 1.28rem;
       text-align: center;
       line-height: 1.28;
@@ -41,9 +41,9 @@
       justify-content: space-around;
       text-align: center;
       font-size: 1.28rem;
-      color: $gunmetal;
+      color: $landing-box-text;
       margin: 18px 0 38.6px 0;
-      border: solid 1.6px rgba(225, 115, 52, 0.2);
+      border: solid 1.6px $landing-box-border;
       border-radius: 4px;
       padding: 15px;
       @media screen and (min-width: 768px) {
@@ -55,7 +55,7 @@
 
       & .icon {
         font-size: 2.24rem;
-        color: $dull-orange;
+        color: $landing-icon;
         display: block;
         @media screen and (min-width: 768px) {
           font-size: 2.8rem;
@@ -64,8 +64,8 @@
     }
     &--button {
       border-radius: 21px;
-      background-color: $dirty-blue;
-      color: $white-two;
+      background-color: $landing-btn-bgd;
+      color: $landing-btn-text;
       text-decoration: none;
       text-transform: uppercase;
       font-size: 1.6rem;
@@ -73,17 +73,15 @@
       padding: 14px 22px;
       margin-bottom: 10px;
       display: inline-block;
-
     }
-
   }
 }
 .landing__article--button:hover {
-    cursor: pointer;
-    height: 18px;
-    width: 110px;
-    color: $dirty-blue;
-    background-color: $white-two;
-    box-shadow: 0 4px 20px $dark-green-blue;
-    transition: all 0.2s ease;
-  }
+  cursor: pointer;
+  height: 18px;
+  width: 110px;
+  color: $landing-btn-hover-text;
+  background-color: $landing-btn-hover-bgd;
+  box-shadow: 0 4px 20px $landing-btn-hover-shadow;
+  transition: all 0.2s ease;
+}

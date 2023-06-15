@@ -1,61 +1,78 @@
-
 .border {
- border-top: 1px solid $white-three; 
+  border-top: 1px solid $container-line;
 }
+
 .span_share {
-display: flex;
-justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
+
 .share__button {
- color: $white-two;
- background-color: $dull-orange; 
- text-transform: uppercase;
- font-size: 1.8rem;
- height: 50px;
- width: 200px;
- border-radius: 12px;
- border: solid $dull-orange;
- display: block;
- margin: 20px auto 30px;
+  color: $btn-share;
+  background-color: $btn-share-bgd;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  height: 50px;
+  width: 200px;
+  border-radius: 12px;
+  border: solid $btn-share-border;
+  display: block;
+  margin: 20px auto 30px;
 }
+
 .fa-share-nodes {
-    color: $dull-orange;
-    font-size: 1.8rem;
+  color: $icon;
+  font-size: 1.8rem;
 }
 
 .text__created {
-    font-size: 1.4rem;
-    margin-top: 15px;   
-    text-align: center;
-    padding-bottom: 10px;
+  font-size: 1.4rem;
+  margin-top: 15px;
+  text-align: center;
+  padding-bottom: 10px;
 }
+
 .text__created::first-letter {
-    text-transform: capitalize;
-
+  text-transform: capitalize;
 }
+
 .imagen_creada {
-    color: $dull-orange;
-    font-size: 1.5rem;
-    margin-top: 5px;
-    font-weight: bold;
+  color: $txt-url;
+  font-size: 1.5rem;
+  margin-top: 5px;
+  font-weight: bold;
 }
+
 .buttons__rrss {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 }
+
 .rrss__button {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: 30px; 
-    width: 190px;
-    font-size: 1.4rem;
-    font-family: "Open Sans", sans-serif;
-    border-radius: 5px;
-    border: 1px solid $light-grey-blue;
-    background-color: #00acee;
-    color: $white-two; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 30px;
+  width: 190px;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 5px;
+  border: 1px solid $btn-tw-border;
+  background-color: $btn-tw-bgd;
+  color: $btn-tw;
 }
 
+.disabled__button {
+  color: $btn-disable-txt;
+  background-color: $btn-disable-bgd;
+  border: solid $btn-disable-border;
+}
 
+.borderRedEmpty {
+  border-color: red;
+}

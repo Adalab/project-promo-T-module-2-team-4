@@ -7,7 +7,6 @@ const emailInput = document.querySelector('.js__email');
 const telephoneInput = document.querySelector('.js__telephone');
 const linkedinInput = document.querySelector('.js__linkedin');
 const githubInput = document.querySelector('.js__github');
-//const navPreview = document.querySelector('.js__navPreview');
 
 const handleReset = (event) => {
   event.preventDefault();

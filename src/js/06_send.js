@@ -5,15 +5,19 @@ const msgError = document.querySelector('.js_msg-error');
 const msgSuccess = document.querySelector('.js_success-msg');
 const btnTwitter = document.querySelector('.js_btnTw');
 function msgAlert() {
-  msgError.innerHTML =
+  msgError.innerHTML +=
     '¡Atención! Ha olvidado completar algunos campos obligatorios*';
+}
+
+function msgAlert2() {
+  msgError.innerHTML += ' El correo electrónico no es válido*';
 }
 
 function handleClickCreateBtn(event) {
   event.preventDefault();
   console.log('se ha enviado');
   console.log(data);
-
+  const emailValue = emailInput.value;
   if (data.name === '') {
     nameInput.classList.add('borderRedEmpty');
     //message += ('el nombre, ');
@@ -30,7 +34,6 @@ function handleClickCreateBtn(event) {
     emailInput.classList.add('borderRedEmpty');
     //message += ('el correo electrónico.');
   }
-
   if (
     data.name !== '' &&
     data.job !== '' &&
@@ -54,6 +57,10 @@ function handleClickCreateBtn(event) {
     msgAlert();
     fillContainer.classList.remove('collapsed');
     shareContainer2.classList.add('collapsed');
+  }
+  if (!emailValue.match(/^[^@]+@[^@]+\.[a-zA-Z]{2,}$/)) {
+    msgAlert2();
+    console.log('Estoy dentro de else if');
   }
 }
 

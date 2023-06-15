@@ -16,6 +16,10 @@ const handleReset = (event) => {
   }
   profilePreview.style.backgroundImage = '';
   redPreview.style.backgroundImage = '';
+  nameInput.classList.remove('borderRedEmpty');
+  jobInput.classList.remove('borderRedEmpty');
+  redPreview.classList.remove('borderRedEmpty');
+  emailInput.classList.remove('borderRedEmpty');
   nameInput.value = '';
   jobInput.value = '';
   emailInput.value = '';
@@ -24,7 +28,9 @@ const handleReset = (event) => {
   githubInput.value = '';
   shareButton.classList.remove('disabled__button');
   shareButton.innerHTML =
-    '<i class="fa-regular fa-address-card"></i> CREAR TARJETA';
+    '<i class="fa-regular fa-address-card"></i> CREATE CARD';
+  msgError.innerHTML = '';
+  msgErrorMail.innerHTML = '';
   shareContainer.classList.add('collapsed');
   shareContainer2.classList.add('collapsed');
   designContainer.classList.remove('collapsed');

@@ -1,5 +1,5 @@
 .landing {
-  background-color: $white-four;
+  background-color: $landing-main-bgd;
   text-align: center;
   padding: 35px 26px 40px;
   height: 50vh;
@@ -14,26 +14,43 @@
     align-items: center;
     &--h1 {
       font-family: $font-main-title;
-      color: $dull-orange;
-      font-size: 1.9rem;
+      color: $landing-title;
+      font-size: 2.2rem;
       font-weight: 900;
       text-align: center;
+      font-style: italic;
       @media screen and (min-width: 768px) {
         font-size: 2.4rem;
       }
     }
     &--p {
-      color: $dark-green-blue;
+      padding-top: 20px;
+      color: $landing-subtitle;
       font-size: 1.28rem;
       text-align: center;
       line-height: 1.28;
       margin-top: 4px;
+      padding-bottom: 25px;
 
       @media screen and (min-width: 768px) {
         font-size: 1.6rem;
         margin: 4px 216px;
       }
     }
+    &--msg{
+      font-weight: bold;
+      width: 238px;
+      font-size: 1.28rem;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-top: dotted 2px $landing-box-border;
+      display: flex;
+      justify-content: center;
+      @media screen and (min-width: 768px) {
+          width: 325px;
+          font-size: 1.6rem;
+    }
+  }
     &--icons {
       width: 238px;
       display: flex;
@@ -41,21 +58,23 @@
       justify-content: space-around;
       text-align: center;
       font-size: 1.28rem;
-      color: $gunmetal;
-      margin: 18px 0 38.6px 0;
-      border: solid 1.6px rgba(225, 115, 52, 0.2);
-      border-radius: 4px;
+      font-weight: 600;
+      color: $landing-box-text;
+      margin: 0 0 38.6px 0;
+      border-top: solid 1.6px $landing-box-border;
+      border-bottom: solid 1.6px $landing-box-border;
       padding: 15px;
       @media screen and (min-width: 768px) {
         width: 325px;
         font-size: 1.6rem;
-        margin: 27px 222px 60px;
+        margin: 0 222px 60px;
         padding: 15px 20px 22px;
       }
-
+      
       & .icon {
+        padding-bottom: 5px;
         font-size: 2.24rem;
-        color: $dull-orange;
+        color: $landing-icon;
         display: block;
         @media screen and (min-width: 768px) {
           font-size: 2.8rem;
@@ -64,8 +83,8 @@
     }
     &--button {
       border-radius: 21px;
-      background-color: $dirty-blue;
-      color: $white-two;
+      background-color: $landing-btn-bgd;
+      color: $landing-btn-text;
       text-decoration: none;
       text-transform: uppercase;
       font-size: 1.6rem;
@@ -73,17 +92,15 @@
       padding: 14px 22px;
       margin-bottom: 10px;
       display: inline-block;
-
     }
-
   }
 }
 .landing__article--button:hover {
-    cursor: pointer;
-    height: 18px;
-    width: 110px;
-    color: $dirty-blue;
-    background-color: $white-two;
-    box-shadow: 0 4px 20px $dark-green-blue;
-    transition: all 0.2s ease;
-  }
+  cursor: pointer;
+  height: 18px;
+  width: 110px;
+  color: $landing-btn-hover-text;
+  background-color: $landing-btn-hover-bgd;
+  box-shadow: 0 4px 20px $landing-btn-hover-shadow;
+  transition: all 0.2s ease;
+}

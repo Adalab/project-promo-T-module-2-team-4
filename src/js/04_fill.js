@@ -14,7 +14,7 @@ const previewGitHub = document.querySelector('.js__preview_github');
 
 const fillInput = document.querySelector('.js__fill');
 
-const data = {
+let data = {
   palette: 1,
   name: '',
   job: '',
@@ -27,7 +27,7 @@ const data = {
 
 function renderPreview() {
   if (data.name === '') {
-    previewName.innerHTML = 'Nombre Apellido';
+    previewName.innerHTML = 'Name Surname';
   } else {
     previewName.innerHTML = data.name;
   }

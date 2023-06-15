@@ -3,7 +3,7 @@
     min-height: 75vh;
     display: flex;
     flex-direction: row-reverse;
-    background: linear-gradient(to bottom, $white-four, $white-two);
+    background: $gradient-main-bgd;
     padding: 20px 40px 20px;
     gap: 30px;
   }
@@ -13,7 +13,7 @@
 }
 
 .preview {
-  background: linear-gradient(to bottom, $silver, $pale-grey);
+  background: $gradient-preview-bgd;
   display: flex;
   justify-content: center;
 }
@@ -24,10 +24,10 @@
 .preview__button {
   width: 100px;
   height: 30px;
-  background-color: $silver;
+  background-color: $btn-reset-bgd;
   text-transform: uppercase;
-  color: $gunmetal;
-  border: solid 2px $white-two;
+  color: $btn-reset;
+  border: solid 2px $btn-reset-border;
   border-radius: 20px;
   font-size: 1.3rem;
   margin: 50px 0 25px;
@@ -39,25 +39,25 @@
 .preview__button:hover {
   cursor: pointer;
   width: 110px;
-  color: $dirty-blue;
-  background-color: $white-two;
-  box-shadow: 0 4px 20px $dark-green-blue;
+  color: $btn-reset;
+  background-color: $btn-reset-bgd-hover;
+  box-shadow: 0 4px 20px $btn-reset-hover-shadow;
   transition: all 0.2s ease;
 }
 
 .container_namedescription {
   border-left: 5px solid;
-  border-color: $dirty-blue;
+  border-color: $card-border-left;
 }
 
 .card {
   width: 240px;
-  background-color: $white-two;
+  background-color: $card-bgd;
   box-shadow: 0 1px 10px 0 $black-20, 0 1px 3px 0 $black-32;
   &__name {
     text-transform: capitalize;
     font-size: 2rem;
-    color: $dark-green-blue;
+    color: $txt-fullname;
     font-family: $font-secondary;
     font-weight: bold;
     margin: 0px 25px 15px 25px;
@@ -65,12 +65,12 @@
   }
   &__description {
     font-size: 1.6rem;
-    color: $gunmetal;
+    color: $txt-job;
     font-family: $font-secondary;
     padding: 0 25px 15px 25px;
   }
   &__img {
-    background-image: url('../images/tica.jpg');
+    background-image: url('../images/chica.png');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -86,8 +86,8 @@
     align-items: center;
     display: flex;
     text-decoration: none;
-    color: $dark-green-blue;
-    border: solid 2px $hospital-green;
+    color: $card-icon;
+    border: solid 2px $card-icon-border;
     border-radius: 50%;
     padding: 7px;
     height: 16px;
@@ -95,71 +95,71 @@
   }
 }
 .card__icon:hover {
-  color: $dirty-blue;
-  background-color: $hospital-green;
+  color: $card-icon-hover;
+  background-color: $card-icon-hover-bgd;
 }
 .palette-1 {
   .card__name {
-    color: $dark-green-blue;
+    color: $palette1-txt-icon;
   }
   .container_namedescription {
-    border-color: $dirty-blue;
+    border-color: $palette1-border-left;
   }
   .card__icon {
-    color: $dark-green-blue;
-    border-color: $hospital-green;
+    color: $palette1-txt-icon;
+    border-color: $palette1-icon-border;
   }
   .card__icon:hover {
-    color: $dirty-blue;
-    background-color: $hospital-green;
+    color: $palette1-icon-hover;
+    background-color: $palette1-icon-bgd-hover;
   }
 }
 .palette-2 {
   .card__name {
-    color: $dried-blood;
+    color: $palette2-txt-icon;
   }
   .container_namedescription {
-    border-color: $rusty-red;
+    border-color: $palette2-border-left;
   }
   .card__icon {
-    color: $dried-blood;
-    border-color: $tomato;
+    color: $palette2-txt-icon;
+    border-color: $palette2-icon-border;
   }
   .card__icon:hover {
-    color: $white-two;
-    background-color: $tomato;
+    color: $palette2-icon-hover;
+    background-color: $palette2-icon-bgd-hover;
   }
 }
 
 .palette-3 {
   .card__name {
-    color: $slate;
+    color: $palette3-txt-icon;
   }
   .container_namedescription {
-    border-color: $faded-orange;
+    border-color: $palette3-border-left;
   }
   .card__icon {
-    color: $slate;
-    border-color: $light-grey-blue;
+    color: $palette3-txt-icon;
+    border-color: $palette3-icon-border;
   }
   .card__icon:hover {
-    color: $slate;
-    background-color: $light-grey-blue;
+    color: $palette3-icon-hover;
+    background-color: $palette3-icon-bgd-hover;
   }
 }
 
 .palette-4 {
   .card__name {
-    color: $honolulu-blue;
+    color: $palette4-txt-icon;
   }
   .container_namedescription {
-    border-color: $pacific-cyan;
+    border-color: $palette4-border-left;
   }
   .card__icon {
-    color: $honolulu-blue;
-    border-color: $non-photo-blue;
+    color: $palette4-txt-icon;
+    border-color: $palette4-icon-border;
   }
   .card__icon:hover {
-    background-color: $non-photo-blue;
+    background-color: $palette4-icon-bgd-hover;
   }
 }

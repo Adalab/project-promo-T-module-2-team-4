@@ -1,6 +1,7 @@
 .central-column {
   padding: 0 20px;
 }
+
 .headerfill {
   display: flex;
   padding: 10px 0 7px;
@@ -9,80 +10,92 @@
 
   .fa-keyboard {
     font-size: 1.8rem;
-    color: $dull-orange;
+    color: $icon;
   }
+
   &__title {
     font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: 600;
-    color: $gunmetal;
+    color: $legend;
   }
+
   .fa-angle-down {
     margin-left: auto;
     font-size: 1.8rem;
-    color: $gunmetal;
+    color: $arrow;
   }
 }
+
 .headerfill:hover {
   cursor: pointer;
-  background: linear-gradient(to right, $silver, $pale-grey);
+  background: $gradient-preview-bgd;
 }
+
 .contentfill {
   display: flex;
   flex-direction: column;
   padding: 15px 0 30px;
+
   &__label {
     font-size: 1.4rem;
     line-height: 20px;
-    color: $dark-green-blue;
+    color: $label;
     margin-bottom: 7px;
   }
+
   &__input {
     margin-bottom: 20px;
-    border: solid 1px $hospital-green;
+    border: solid 1px $input-border;
     height: 30px;
   }
+
   ::placeholder {
     font-size: 1.4rem;
-    color: $pinkish-grey;
+    color: $placeholder;
     line-height: 20px;
   }
+
   & .buttonaddimg {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 140px;
-    background-color: #e17334;
-    color: #fff;
+    background-color: $btn-addfile-bgd;
+    color: $btn-addfile;
     border-radius: 3px;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    box-shadow: 0 0 4px 0 $btn-addfile-shadow;
     padding-bottom: 1px;
     font-size: 1.4rem;
   }
+
   & .add__image {
     display: inline-flex;
     gap: 20px;
   }
+
   &__checkbox {
     margin: 0 0 20px;
     height: 30px;
     width: 30px;
-    border: solid 5px $hospital-green;
+    border: solid 5px $img-thumbnail;
   }
 }
 
 .profile {
   display: flex;
   gap: 20px;
+
   &__preview {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 1px solid #ccc;
+    border: 1px solid $img-thumbnail;
     width: 30px;
     height: 30px;
   }
 }
+
 .msg_fieldRequired {
-  color: $dark-green-blue;
+  color: $txt-msg;
 }

@@ -22,7 +22,9 @@
       name="job"
     />
 
-    <label class="contentfill__label" for="hidden__addfile">Imagen de perfil*</label>
+    <label class="contentfill__label" for="hidden__addfile"
+      >Imagen de perfil*</label
+    >
     <div class="profile">
       <div class="add__image">
         <input
@@ -33,7 +35,9 @@
           name="hidden__addfile"
           value="Añadir imagen"
         />
-        <label class="contentfill__input buttonaddimg" for="hidden__addfile">Añadir imagen</label>
+        <label class="contentfill__input buttonaddimg" for="hidden__addfile"
+          >Añadir imagen</label
+        >
       </div>
       <div class="profile__preview js__red-preview"></div>
     </div>
@@ -44,6 +48,8 @@
       id="email"
       type="email"
       name="email"
+      pattern="/^[^@]+@[^@]+\.[a-zA-Z]{2,}$/"
+      required="required"
     />
     <label class="contentfill__label" for="phone">Teléfono</label>
     <input

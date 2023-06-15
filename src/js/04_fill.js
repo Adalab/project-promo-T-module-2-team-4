@@ -14,7 +14,7 @@ const previewGitHub = document.querySelector('.js__preview_github');
 
 const fillInput = document.querySelector('.js__fill');
 
-const data = {
+let data = {
   palette: 1,
   name: '',
   job: '',

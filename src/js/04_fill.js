@@ -27,7 +27,7 @@ let data = {
 
 function renderPreview() {
   if (data.name === '') {
-    previewName.innerHTML = 'Nombre Apellido';
+    previewName.innerHTML = 'Name Surname';
   } else {
     previewName.innerHTML = data.name;
   }
